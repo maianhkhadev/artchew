@@ -1,32 +1,38 @@
 [
   {
-    "avatarUrl": "images/students/student-01.jpeg",
-    "name": "Review 01",
+    "id": 1,
+    "avatarUrl": "images/articles/article-01.png",
+    "title": "Phối cảnh",
     "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus...."
   },
   {
-    "avatarUrl": "images/students/student-02.jpeg",
-    "name": "Review 02",
+    "id": 2,
+    "avatarUrl": "images/articles/article-02.png",
+    "title": "Dựng hình",
     "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus...."
   },
   {
-    "avatarUrl": "images/students/student-03.jpeg",
-    "name": "Review 03",
+    "id": 3,
+    "avatarUrl": "images/articles/article-03.png",
+    "title": "Ánh sáng",
     "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus...."
   },
   {
-    "avatarUrl": "images/students/student-04.jpeg",
-    "name": "Review 04",
+    "id": 4,
+    "avatarUrl": "images/articles/article-04.png",
+    "title": "Anatomy cơ bản",
     "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus...."
   },
   {
-    "avatarUrl": "images/students/student-05.jpeg",
-    "name": "Review 05",
+    "id": 5,
+    "avatarUrl": "images/articles/article-05.png",
+    "title": "Layout & Composition",
     "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus...."
   },
   {
-    "avatarUrl": "images/students/student-06.jpeg",
-    "name": "Review 06",
+    "id": 6,
+    "avatarUrl": "images/articles/article-06.png",
+    "title": "Lý thuyết màu sắc",
     "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus...."
   }
 ]

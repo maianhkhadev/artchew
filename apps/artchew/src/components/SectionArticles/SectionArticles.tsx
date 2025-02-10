@@ -1,16 +1,16 @@
 import { DefaultSection } from '../DefaultSection';
-// import { StudentReview } from '../StudentReview';
+import { Article } from './Article';
 import styles from './SectionArticles.module.scss';
 
-// import data from './data.json'
+import articles from './articles.json'
 
 export const SectionArticles = () => {
   return (
     <DefaultSection title="Review">
       <div className={styles.items}>
-        {/* {data.map((item) => (
-          <StudentReview key={item.name} {...item} />
-        ))} */}
+        {articles.map((article) => (
+          <Article key={article.id} {...article} />
+        ))}
       </div>
     </DefaultSection>
   );

@@ -5,6 +5,8 @@
   --rb-display-xs-line-height: 28px;
   --rb-text-md-font-size: 18px;
   --rb-text-md-line-height: 20px;
+  --rb-text-lg-font-size: 18px;
+  --rb-text-lg-line-height: 22px;
 }
 
 h3, h4, h5, h6 {
@@ -13,4 +15,12 @@ h3, h4, h5, h6 {
 
 p {
   color: #5A5656;
+}
+
+.rebear-button {
+  border-color: #302C2C !important;
+}
+
+.rebear-button:focus {
+  outline: unset;
 }
