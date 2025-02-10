@@ -12,7 +12,7 @@
     "next": "14.2.16",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "rebear": "^0.0.38",
+    "rebear": "^0.0.40",
     "rebear-icons": "^0.0.5"
   },
   "devDependencies": {
