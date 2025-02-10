@@ -1,5 +1,5 @@
 import { SectionReviews } from '../components/SectionReviews';
-import { SectionSubjects } from '../components/SectionSubjects';
+import { SectionArticles } from '../components/SectionArticles';
 import styles from './page.module.scss';
 
 export default function Index() {
@@ -12,7 +12,7 @@ export default function Index() {
     <div className={styles.page}>
       <SectionReviews />
 
-      <SectionSubjects />
+      <SectionArticles />
     </div>
   );
 }
