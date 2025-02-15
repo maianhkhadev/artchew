@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "thumbnailUrl": "images/student-arts/art-01.jpeg",
+    "name": "Tên tác phẩm",
+    "artist": "Nguyễn Văn A",
+    "courseName": "Video bài giảng",
+    "year": "2023"
+  },
+  {
+    "id": 12,
+    "thumbnailUrl": "images/student-arts/art-02.jpeg",
+    "name": "Tên tác phẩm",
+    "artist": "Nguyễn Văn A",
+    "courseName": "Video bài giảng",
+    "year": "2023"
+  },
+  {
+    "id": 3,
+    "thumbnailUrl": "images/student-arts/art-03.png",
+    "name": "Tên tác phẩm",
+    "artist": "Nguyễn Văn A",
+    "courseName": "Video bài giảng",
+    "year": "2023"
+  },
+  {
+    "id": 4,
+    "thumbnailUrl": "images/student-arts/art-04.jpeg",
+    "name": "Tên tác phẩm",
+    "artist": "Nguyễn Văn A",
+    "courseName": "Video bài giảng",
+    "year": "2023"
+  },
+  {
+    "id": 5,
+    "thumbnailUrl": "images/student-arts/art-05.jpeg",
+    "name": "Tên tác phẩm",
+    "artist": "Nguyễn Văn A",
+    "courseName": "Video bài giảng",
+    "year": "2023"
+  },
+  {
+    "id": 6,
+    "thumbnailUrl": "images/student-arts/art-06.jpeg",
+    "name": "Tên tác phẩm",
+    "artist": "Nguyễn Văn A",
+    "courseName": "Video bài giảng",
+    "year": "2023"
+  }
+]
