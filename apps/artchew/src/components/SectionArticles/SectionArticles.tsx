@@ -6,7 +6,7 @@ import articles from './articles.json'
 
 export const SectionArticles = () => {
   return (
-    <DefaultSection title="Review">
+    <DefaultSection title="Khoá học">
       <div className={styles.items}>
         {articles.map((article) => (
           <Article key={article.id} {...article} />

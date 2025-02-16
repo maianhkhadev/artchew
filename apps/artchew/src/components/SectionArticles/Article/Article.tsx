@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import { Title, Paragraph, Button } from 'rebear';
 import styles from './Article.module.scss';
 
@@ -21,9 +22,11 @@ export const Article = (props: ArticleProps) => {
         {title}
       </Title>
       <Paragraph className={styles.content}>{content}</Paragraph>
-      <Button className={styles.viewMore} variant="secondary" size="2xl">
-        Xem thêm thông tin
-      </Button>
+      <Link href="/subject">
+        <Button className={styles.viewMore} variant="secondary" size="2xl">
+          Xem thêm thông tin
+        </Button>
+      </Link>
     </div>
   );
 };

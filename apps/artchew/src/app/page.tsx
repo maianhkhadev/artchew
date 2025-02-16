@@ -1,7 +1,5 @@
-import { PricePanel } from '../components/PricePanel';
-import { SectionStudentArts } from '../components/SectionStudentArts';
+import { SectionHero } from '../components/SectionHeroWelcome';
 import { SectionReviews } from '../components/SectionReviews';
-import { SectionArticles } from '../components/SectionArticles';
 import styles from './page.module.scss';
 
 export default function Index() {
@@ -12,13 +10,9 @@ export default function Index() {
    */
   return (
     <div className={styles.page}>
-      {/* <PricePanel /> */}
-
-      <SectionStudentArts />
+      <SectionHero />
 
       <SectionReviews />
-
-      <SectionArticles />
     </div>
   );
 }

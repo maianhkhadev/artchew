@@ -1,0 +1,23 @@
+.lession {
+  background-color: #ffffff;
+  border: 1px solid #302C2C;
+  border-radius: 20px;
+  box-shadow: 8px 8px 0 0 #302C2C;
+  padding: 20px;
+
+  .thumbnail {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    aspect-ratio: 3 / 2;
+    border: 1px solid #302C2C;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .title {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+}
