@@ -46,4 +46,20 @@ body {
   :not(.rebear-button-error).rebear-button-secondary {
     border-color: #302C2C;
   }
+
+  :not(.rebear-button-error).rebear-button-tertiary {
+    color: #FFFFFF;
+    background-color: #FF5555;
+    border-color: #302C2C;
+  }
+
+  :not(.rebear-button-error).rebear-button-tertiary:hover {
+    color: #FFFFFF;
+    background-color: #FF5555;
+    border-color: #302C2C;
+  }
+
+  .rebear-modal-backdrop {
+    z-index: 9999;
+  }
 }

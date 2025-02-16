@@ -1,0 +1,27 @@
+.modal {
+  border-radius: 20px;
+
+  :global {
+    .rebear-modal-dismiss {
+      border-radius: 50%;
+    }
+  }
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 24px;
+  align-items: flex-end;
+  padding: 20px 4px 4px;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  p {
+    margin-top: 16px;
+  }
+}
