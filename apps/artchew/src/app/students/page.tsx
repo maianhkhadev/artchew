@@ -2,7 +2,7 @@ import { SectionStudentArts } from '../../components/SectionStudentArts';
 import { SectionReviews } from '../../components/SectionReviews';
 import styles from './page.module.scss';
 
-export const Students = () => {
+export default function Students() {
   return (
     <div className={styles.page}>
       <SectionStudentArts />
@@ -11,5 +11,3 @@ export const Students = () => {
     </div>
   );
 };
-
-export default Students;

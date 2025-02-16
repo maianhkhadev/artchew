@@ -1,7 +1,5 @@
 import styles from './page.module.scss';
 
-export const Questions = () => {
+export default function Questions() {
   return <div className={styles.page}>Questions</div>;
 };
-
-export default Questions;

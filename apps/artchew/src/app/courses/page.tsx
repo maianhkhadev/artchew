@@ -2,7 +2,7 @@ import { PricePanel } from '../../components/PricePanel';
 import { SectionArticles } from '../../components/SectionArticles';
 import styles from './page.module.scss';
 
-export const Courses = () => {
+export default function Course() {
   return (
     <div className={styles.page}>
       {/* <PricePanel /> */}
@@ -11,5 +11,3 @@ export const Courses = () => {
     </div>
   );
 };
-
-export default Courses;

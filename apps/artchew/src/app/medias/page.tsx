@@ -1,7 +1,7 @@
 import { SectionHero } from '../../components/SectionHeroMedias';
 import { SectionLessions } from '../../components/SectionLessions';
 
-export const Medias = ()=> {
+export default function Medias() {
   return (
     <div>
       <SectionHero />
@@ -19,6 +19,4 @@ export const Medias = ()=> {
       <SectionLessions title="Lý thuyết màu sắc" />
     </div>
   );
-}
-
-export default Medias
+};
