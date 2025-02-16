@@ -1,3 +1,6 @@
+"use client"
+import { Display } from 'rebear';
+import { Container } from '../Container';
 import styles from './DefaultSection.module.scss';
 
 type DefaultSectionProps = {
@@ -10,9 +13,11 @@ export const DefaultSection = (props: DefaultSectionProps) => {
 
   return (
     <section className={styles.section}>
-      <header className={styles.header}>{title}</header>
+      <header className={styles.header}>
+        <Display className={styles.title}>{title}</Display>
+      </header>
       <main>
-        <div className={styles.container}>{children}</div>
+        <Container>{children}</Container>
       </main>
     </section>
   );

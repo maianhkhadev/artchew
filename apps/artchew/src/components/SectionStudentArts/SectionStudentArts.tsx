@@ -6,7 +6,7 @@ import arts from './arts.json'
 
 export const SectionStudentArts = () => {
   return (
-    <DefaultSection title="Review">
+    <DefaultSection title="Sản phẩm">
       <div className={styles.items}>
         {arts.map((art) => (
           <StudentArt key={art.id} {...art} />

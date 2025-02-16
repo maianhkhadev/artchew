@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Protest+Strike&display=swap');
 @import 'rebear/style.css';
 
 :root {
@@ -9,18 +10,40 @@
   --rb-text-lg-line-height: 22px;
 }
 
-h3, h4, h5, h6 {
-  color: #5A5656;
-}
+body {
+  font-family: "Afacad", serif;
 
-p {
-  color: #5A5656;
-}
-
-.rebear-button {
-  border-color: #302C2C !important;
-}
-
-.rebear-button:focus {
-  outline: unset;
+  h3, h4, h5, h6 {
+    color: #5A5656;
+  }
+  
+  p {
+    color: #5A5656;
+  }
+  
+  .rebear-button:focus {
+    outline: unset;
+  }
+  
+  :not(.rebear-button-error).rebear-button-primary {
+    color: #302C2C;
+    background-color: #FEBD2D;
+    border-color: #302C2C;
+  }
+  
+  :not(.rebear-button-error).rebear-button-primary:hover {
+    color: #302C2C;
+    background-color: #FFFFFF;
+    border-color: #302C2C;
+  }
+  
+  :not(.rebear-button-error).rebear-button-primary.active {
+    color: #302C2C;
+    background-color: #FF5555;
+    border-color: #302C2C;
+  }
+  
+  :not(.rebear-button-error).rebear-button-secondary {
+    border-color: #302C2C;
+  }
 }

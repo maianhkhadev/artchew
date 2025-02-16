@@ -12,7 +12,7 @@ export default function Index() {
    */
   return (
     <div className={styles.page}>
-      <PricePanel />
+      {/* <PricePanel /> */}
 
       <SectionStudentArts />
 

@@ -1,1 +1,1 @@
-export * from './DefaultSection'
+export * from './DefaultSection';
