@@ -1,0 +1,31 @@
+.accordion {
+  position: relative;
+  width: 50%;
+  margin: auto auto 20px;
+
+  .icon {
+    position: absolute;
+    top: -8px;
+    left: -80px;
+    width: auto;
+    height: 140px;
+  }
+
+  .question {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 140px;
+    background-image: url('/images/question-box.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .answer {
+    text-align: center;
+    padding: 16px 7% 0;
+  }
+}

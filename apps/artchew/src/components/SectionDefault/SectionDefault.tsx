@@ -1,14 +1,14 @@
 "use client"
 import { Display } from 'rebear';
 import { Container } from '../Container';
-import styles from './DefaultSection.module.scss';
+import styles from './SectionDefault.module.scss';
 
-type DefaultSectionProps = {
+type SectionDefaultProps = {
   title: string;
   children: React.ReactNode;
 };
 
-export const DefaultSection = (props: DefaultSectionProps) => {
+export const SectionDefault = (props: SectionDefaultProps) => {
   const { title, children } = props;
 
   return (
@@ -23,4 +23,4 @@ export const DefaultSection = (props: DefaultSectionProps) => {
   );
 };
 
-export default DefaultSection;
+export default SectionDefault;

@@ -1,4 +1,4 @@
-import { DefaultSection } from '../DefaultSection';
+import { SectionDefault } from '../SectionDefault';
 import { Article } from './Article';
 import styles from './SectionArticles.module.scss';
 
@@ -6,13 +6,13 @@ import articles from './articles.json'
 
 export const SectionArticles = () => {
   return (
-    <DefaultSection title="Khoá học">
+    <SectionDefault title="Khoá học">
       <div className={styles.items}>
         {articles.map((article) => (
           <Article key={article.id} {...article} />
         ))}
       </div>
-    </DefaultSection>
+    </SectionDefault>
   );
 }
 

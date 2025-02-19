@@ -14,7 +14,6 @@ export const BioModal = (props: BioModalProps) => {
 
   return (
     <Modal
-      width={800}
       className={styles.modal}
       open={open}
       onOpenChange={onOpenChange}

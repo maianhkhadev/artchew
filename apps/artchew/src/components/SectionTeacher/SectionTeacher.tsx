@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { Title, Paragraph, Button } from 'rebear';
-import { DefaultSection } from '../DefaultSection';
+import { SectionDefault } from '../SectionDefault';
 import { BioModal } from './BioModal';
 import styles from './SectionTeacher.module.scss';
 import src from './teacher-01.png';
@@ -15,7 +15,7 @@ export const SectionTeacher = () => {
   };
 
   return (
-    <DefaultSection title="Giáo viên">
+    <SectionDefault title="Giáo viên">
       <div className={styles.content}>
         <Image src={src} alt="" />
 
@@ -39,7 +39,7 @@ export const SectionTeacher = () => {
       </div>
 
       <BioModal open={open} onOpenChange={onOpenChange} />
-    </DefaultSection>
+    </SectionDefault>
   );
 };
 
