@@ -6,6 +6,7 @@
   padding: 20px;
 
   .thumbnail {
+    position: relative;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -13,11 +14,33 @@
     border: 1px solid #302C2C;
     border-radius: 10px;
     margin-bottom: 20px;
+
+    .buttonStart {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      
+      img {
+        width: 8rem;
+        height: auto;
+      }
+    }
   }
 
   .title {
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 20px;
+  }
+}
+
+.modalContent {
+  text-align: center;
+  padding: 5rem 3rem 4rem;
+
+  button {
+    text-transform: uppercase;
+    border-radius: 32px;
   }
 }

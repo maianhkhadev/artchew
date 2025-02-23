@@ -14,9 +14,9 @@ export const BioModal = (props: BioModalProps) => {
 
   return (
     <Modal
-      className={styles.modal}
       open={open}
       onOpenChange={onOpenChange}
+      className={styles.modal}
     >
       <ModalContent>
         <div className={styles.content}>

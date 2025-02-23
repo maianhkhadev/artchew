@@ -1,13 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Protest+Strike&display=swap');
 @import 'rebear/style.css';
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Protest+Strike&display=swap');
 
-:root {
-  --rb-display-xs-font-size: 28px;
-  --rb-display-xs-line-height: 28px;
-  --rb-text-md-font-size: 18px;
-  --rb-text-md-line-height: 20px;
-  --rb-text-lg-font-size: 18px;
-  --rb-text-lg-line-height: 22px;
+html {
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 1300px) {
+    font-size: 15px;
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 14px;
+  }
 }
 
 body {
@@ -61,5 +67,35 @@ body {
 
   .rebear-modal-backdrop {
     z-index: 9999;
+  }
+
+  .rebear-modal {
+    border-radius: 20px;
+  
+    .rebear-modal-dismiss {
+      border-radius: 50%;
+    }
+  }
+
+  .rebear-form-item {
+    text-align: left;
+  }
+
+  .rebear-form-label {
+    color: #5A5656;
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: 700;
+  }
+
+  .rebear-input {
+    border-radius: 32px;
+    padding: 15px 24px;
+  }
+
+  .rebear-input-primary {
+    color: #5A5656;
+    background-color: #F4F4F4;
+    border-color: #5A5656;
   }
 }

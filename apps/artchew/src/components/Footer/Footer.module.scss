@@ -1,10 +1,56 @@
 .footer {
   background-color: #ff5555;
-  padding-top: 20px;
-  padding-bottom: 100px;
+  padding-top: 1.25rem;
+  padding-bottom: 6.25rem;
+
+  .footerBar {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 
   .brand {
     width: auto;
-    height: 276px;
+    height: 17.25rem;
+  }
+
+  .links {
+    @media screen and (min-width: 1200px) {
+      width: 950px;
+      display: grid;
+      grid-template-columns: 2fr 2fr 1fr;
+      margin-top: 3rem;
+    }
+
+    .groupLinks {
+
+      @media screen and (max-width: 1200px) {
+        margin-bottom: 2rem;
+      }
+
+      h3 {
+        color: #ffffff;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: #ffffff;
+        font-size: 1.25rem;
+        line-height: 1.25rem;
+        text-decoration: none;
+        padding: 0.5rem 0;
+      }
+    }
+
+    .socials {
+      a {
+        margin-right: 1rem;
+      }
+    }
   }
 }

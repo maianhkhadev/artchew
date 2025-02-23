@@ -1,0 +1,40 @@
+.cta {
+  position: fixed;
+  right: 1%;
+  bottom: 5%;
+
+  img {
+    width: 5rem;
+    height: auto;
+  }
+}
+
+.modal {
+  width: 900px;
+
+  .modalContent {
+    text-align: center;
+    padding: 5rem 3rem 4rem;
+
+    .title {
+      color: #302C2C;
+      font-size: 216px;
+      font-family: "Protest Strike", serif;
+      text-transform: uppercase;
+      line-height: 216px;
+    }
+
+    form {
+      width: 400px;
+      margin: auto;
+    }
+  
+    button {
+      width: 75%;
+      justify-content: center;
+      text-transform: uppercase;
+      border-radius: 32px;
+      margin-top: 16px;
+    }
+  }
+}

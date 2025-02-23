@@ -1,12 +1,5 @@
 .modal {
-  width: 1400px !important;
-  border-radius: 20px;
-
-  :global {
-    .rebear-modal-dismiss {
-      border-radius: 50%;
-    }
-  }
+  width: 1400px;
 }
 
 .content {

@@ -14,7 +14,7 @@ type QuestionProps = {
 
 export const Question = (props: QuestionProps) => {
   const { active, id, question, answer, onClick } = props;
-  console.log(active);
+
   return (
     <div className={styles.accordion}>
       {active && <Image className={styles.icon} src={src} alt="" />}

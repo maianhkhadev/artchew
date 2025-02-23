@@ -7,12 +7,13 @@
   "dependencies": {
     "@mux/mux-player-react": "^3.2.4",
     "axios": "^1.7.9",
+    "clsx": "^2.1.1",
     "express": "~4.18.1",
     "mongoose": "^8.9.5",
     "next": "14.2.16",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "rebear": "^0.0.40",
+    "rebear": "^0.0.41",
     "rebear-icons": "^0.0.5"
   },
   "devDependencies": {

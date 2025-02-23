@@ -1,6 +1,8 @@
 import './global.scss';
+import './variables.scss';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
+import { GetInTouch } from '../components/GetInTouch';
 
 export const metadata = {
   title: 'Welcome to artchew',
@@ -22,6 +24,8 @@ export default function RootLayout(props: RootLayoutProps) {
         <main>{children}</main>
 
         <Footer />
+
+        <GetInTouch />
       </body>
     </html>
   );

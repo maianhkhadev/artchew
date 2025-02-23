@@ -2,8 +2,11 @@
   position: fixed;
   top: 0;
   width: 100%;
-  padding-top: 40px;
   z-index: 1050;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 40px;
+  }
 
   .headerBar {
     display: flex;
@@ -11,17 +14,32 @@
     justify-content: space-between;
   }
 
+  .mobileMenuButton {
+    margin-right: 36px;
+    
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
+  }
+
   .brand {
     width: auto;
-    height: 120px;
+    height: 7.5rem;
   }
 
   .links {
-    display: flex;
     gap: 16px;
     background-color: #FFFFFF;
     border-radius: 64px;
     padding: 16px 32px;
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+  
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
 
     button {
       border-radius: 32px;
@@ -37,6 +55,39 @@
 
     button {
       border-radius: 50%;
+    }
+  }
+}
+
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  transform: translateX(-100%);
+  transition: all 0.25s ease-in-out;
+  padding: 2.25rem 2.5vw;
+  z-index: 1080;
+
+  &.active {
+    transform: translateX(0);
+  }
+
+  .links {
+    width: 75vw;
+    margin: 5rem auto;
+
+    a {
+      text-decoration: none;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      border-radius: 32px;
+      margin-bottom: 2rem;
     }
   }
 }
