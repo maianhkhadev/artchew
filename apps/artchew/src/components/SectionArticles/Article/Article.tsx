@@ -22,7 +22,7 @@ export const Article = (props: ArticleProps) => {
         {title}
       </Title>
       <Paragraph className={styles.content}>{content}</Paragraph>
-      <Link href="/subject">
+      <Link href="/article">
         <Button className={styles.viewMore} variant="secondary" size="2xl">
           Xem thêm thông tin
         </Button>
