@@ -5,7 +5,7 @@ import { Title, Paragraph, Button } from 'rebear';
 import { SectionDefault } from '../SectionDefault';
 import { BioModal } from './BioModal';
 import styles from './SectionTeacher.module.scss';
-import src from './teacher-01.png';
+import src from './teacher-01.svg';
 
 export const SectionTeacher = () => {
   const [open, onOpenChange] = useState<boolean>(false);
