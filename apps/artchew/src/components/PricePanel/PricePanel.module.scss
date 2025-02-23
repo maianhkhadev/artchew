@@ -1,12 +1,116 @@
 .pricePanel {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  
-  .list {
 
+  .panelContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 6.25rem;
   }
 
-  .course {
+  @media screen and (max-width: 600px) {
+    max-width: 100%;
+    overflow: auto;
 
+    .panelContent {
+      width: 1200px;
+    }
   }
+}
+
+.menu {
+
+  .menuHeader, .menuContent, .menuFooter {
+
+    .name {
+      height: 56px;
+      margin-bottom: 58px;
+    }
+
+    p:not(.menuItem) {
+      font-weight: 600;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+
+    p.menuItem {
+      color: #918585;
+      padding: 0.5rem 0 0.5rem 1rem;
+    }
+  }
+
+  .menuHeader {
+    border-top-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem;
+    padding: 2rem 2.5rem 1rem;
+  }
+
+  .menuContent {
+    padding: 1rem 2.5rem;
+  }
+
+  .menuFooter {
+    border-bottom-left-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    padding: 1rem 2.5rem 2rem;
+  }
+}
+
+.course {
+
+  .courseHeader, .courseContent, .courseFooter {
+    text-align: center;
+    
+    .name {
+      height: 56px;
+      margin-bottom: 58px;
+    }
+
+    p {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+
+    .cell {
+      min-height: 2.5rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+
+      @media screen and (max-width: 600px) {
+        height: 35px;
+      }
+
+      img {
+        width: auto;
+        height: 1.25rem;
+      }
+    }
+  }
+
+  .courseHeader {
+    border-top-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem;
+    padding: 2rem 2.5rem 1rem;
+  }
+
+  .courseContent {
+    padding: 1rem 2.5rem;
+  }
+
+  .courseFooter {
+    border-bottom-left-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    padding: 1rem 2.5rem 2rem;
+  }
+
+  &:hover {
+
+    .courseHeader, .courseContent, .courseFooter {
+      background-color: #F1F1F1;
+    }
+  }
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #918585;
 }

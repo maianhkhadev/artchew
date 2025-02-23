@@ -1,6 +1,6 @@
 import { Title, Paragraph } from 'rebear';
-import Image from 'next/image'
-import styles from './Course.module.scss';
+import Image from 'next/image';
+import styles from './PricePanel.module.scss';
 import srcCheck from './checked.svg';
 import srcUncheck from './uncheck.svg';
 
@@ -25,22 +25,34 @@ export const Course = (props: CourseProps) => {
 
   return (
     <div className={styles.course}>
-      <Title className={styles.name} level={3}>
-        {title}
-      </Title>
-      <Paragraph>{numberOfLessions}</Paragraph>
-      <Paragraph>{numberOfStudents}</Paragraph>
-      <Paragraph>{time}</Paragraph>
-      {availableLessions.map((availableLession, index) => (
-        <Image
-          key={index}
-          src={availableLession ? srcCheck : srcUncheck}
-          alt=""
-        />
-      ))}
-      <Title className={styles.name} level={2}>
-        {price} <sub>đ</sub>
-      </Title>
+      <div className={styles.courseHeader}>
+        <Title className={styles.name} level={3}>
+          {title}
+        </Title>
+        <Paragraph>{numberOfLessions}</Paragraph>
+        <Paragraph>{numberOfStudents}</Paragraph>
+        <Paragraph>{time}</Paragraph>
+      </div>
+
+      <div className={styles.divider} />
+
+      <div className={styles.courseContent}>
+        <div className={styles.cell} />
+
+        {availableLessions.map((availableLession, index) => (
+          <div key={index} className={styles.cell}>
+            <Image src={availableLession ? srcCheck : srcUncheck} alt="" />
+          </div>
+        ))}
+      </div>
+
+      <div className={styles.divider} />
+      
+      <div className={styles.courseFooter}>
+        <Title level={2}>
+          {price} <sup>đ</sup>
+        </Title>
+      </div>
     </div>
   );
 };
