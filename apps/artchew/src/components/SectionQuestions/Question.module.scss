@@ -1,7 +1,18 @@
 .accordion {
   position: relative;
-  width: 50%;
   margin: auto auto 20px;
+
+  @media screen and (min-width: 1200px) {
+    width: 50%;
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 1200px) {
+    width: 75%;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
 
   .icon {
     position: absolute;
@@ -9,6 +20,10 @@
     left: -80px;
     width: auto;
     height: 140px;
+
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
   }
 
   .question {

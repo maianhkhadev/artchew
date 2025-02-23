@@ -137,7 +137,12 @@ export const Header = () => {
           >
             Học viên
           </Button>
-          <Button variant="primary" size="2xl">
+          <Button
+            variant="primary"
+            size="2xl"
+            data-link="/questions"
+            onClick={handleRedirect}
+          >
             FAQ
           </Button>
         </nav>
