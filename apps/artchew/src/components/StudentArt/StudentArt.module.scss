@@ -2,8 +2,8 @@
   background-color: #ffffff;
   border: 1px solid #302C2C;
   border-radius: 20px;
-  box-shadow: 8px 8px 0 0 #302C2C;
-  padding: 20px 20px 36px;
+  box-shadow: 0.5rem 0.5rem 0 0 #302C2C;
+  padding: 1.25rem 1.25rem 2.25rem;
 
   .thumbnail {
     background-position: center;
@@ -12,12 +12,12 @@
     aspect-ratio: 1;
     border: 1px solid #302C2C;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
 
   .name {
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
 }

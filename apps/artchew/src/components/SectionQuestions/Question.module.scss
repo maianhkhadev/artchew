@@ -30,13 +30,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 140px;
-    background-image: url('/images/question-box.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
     text-align: center;
     cursor: pointer;
+
+    @media screen and (min-width: 1200px) {
+      height: 140px;
+      background-image: url('/images/question-box.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    @media screen and (max-width: 600px) {
+      border: 1px solid #5A5656;
+      border-radius: 20px;
+      box-shadow: 0.5rem 0.5rem 0 0 #302C2C;
+      padding: 2rem;
+    }
   }
 
   .answer {
