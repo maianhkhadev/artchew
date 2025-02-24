@@ -8,6 +8,11 @@
     padding-top: 40px;
   }
 
+  @media screen and (max-width: 1200px) {
+    background-color: #ffffff;
+    border-bottom: 1px solid #D9D9D9;
+  }
+
   .headerBar {
     display: flex;
     align-items: center;
