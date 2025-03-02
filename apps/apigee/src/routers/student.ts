@@ -1,6 +1,5 @@
 import express, { Request, Response } from "express";
 import Student from "../models/student";
-import Permission from "../models/permission";
 
 const router = express.Router();
 
@@ -25,6 +24,7 @@ router.get("/students/:id", async (req: Request, res: Response) => {
 
 router.post("/students", async (req: Request, res: Response) => {
   try {
+    console.log(req.body)
     const newStudent = new Student(req.body);
     const savedStudent = await newStudent.save();
     res.status(201).json(savedStudent);
@@ -58,16 +58,6 @@ router.delete("/students/:id", async (req: Request, res: Response) => {
     res.json(deletedStudent);
   } catch (err) {
     res.status(500).json({ error: "Failed to delete student." });
-  }
-});
-
-router.get("/students/:id/permissions", async (req: Request, res: Response) => {
-  try {
-    const { id } = req.params;
-    const permissions = await Permission.find({ studentId: id });
-    res.json(permissions);
-  } catch (err) {
-    res.status(500).json({ error: "Failed to fetch permissions." });
   }
 });
 

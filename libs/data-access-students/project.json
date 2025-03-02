@@ -1,0 +1,9 @@
+{
+  "name": "data-access-students",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/data-access-students/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project data-access-students --web",
+  "targets": {}
+}

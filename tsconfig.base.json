@@ -14,7 +14,22 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@artchew/data-access-articles": [
+        "libs/data-access-articles/src/index.ts"
+      ],
+      "@artchew/data-access-lessions": [
+        "libs/data-access-lessions/src/index.ts"
+      ],
+      "@artchew/data-access-lessions/server": [
+        "libs/data-access-lessions/src/server.ts"
+      ],
+      "@artchew/data-access-students": [
+        "libs/data-access-students/src/index.ts"
+      ],
+      "@artchew/data-access-users": ["libs/data-access-users/src/index.ts"],
+      "@artchew/util-axios": ["libs/util-axios/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

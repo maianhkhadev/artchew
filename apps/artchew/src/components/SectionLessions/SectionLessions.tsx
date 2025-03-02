@@ -1,8 +1,7 @@
 import { SectionDefault } from '../SectionDefault';
 import { Lession } from '../Lession';
+import { useLessions } from '@artchew/data-access-lessions';
 import styles from './SectionLessions.module.scss';
-
-import lessions from './lessions.json'
 
 type SectionLessionsProps = {
   title: string;
@@ -10,12 +9,13 @@ type SectionLessionsProps = {
 
 export const SectionLessions = (props: SectionLessionsProps) => {
   const { title } = props;
+  const { data = [] } = useLessions()
 
   return (
     <SectionDefault title={title}>
       <div className={styles.items}>
-        {lessions.map((lession) => (
-          <Lession key={lession.id} {...lession} />
+        {data.map((item) => (
+          <Lession key={item.id} {...item} />
         ))}
       </div>
     </SectionDefault>
