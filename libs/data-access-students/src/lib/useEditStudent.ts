@@ -1,11 +1,11 @@
 import axios from '@artchew/util-axios';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 
-export const useEditStudent = (id: string, formData: any) => {
+export const useEditStudent = (id: string) => {
   const queryClient = useQueryClient();
 
   return useMutation({
-    mutationFn: () => {
+    mutationFn: (formData: any) => {
       return axios.put(`/students/${id}`, formData);
     },
     onSuccess: () => {

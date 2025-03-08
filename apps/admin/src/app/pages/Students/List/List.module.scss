@@ -1,0 +1,15 @@
+.page {
+  padding: 1rem;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 1rem;
+  }
+
+  .main {
+    padding-top: 1rem;
+  }
+}
