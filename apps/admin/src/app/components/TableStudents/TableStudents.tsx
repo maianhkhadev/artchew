@@ -1,6 +1,7 @@
 import { Title, Paragraph } from 'rebear';
 import { useStudents } from '@artchew/data-access-students';
 import { ButtonEditStudent } from '../ButtonEditStudent';
+import { ButtonDeleteStudent } from '../ButtonDeleteStudent';
 import styles from './TableStudents.module.scss';
 
 export function TableStudents() {
@@ -26,8 +27,9 @@ export function TableStudents() {
               <Paragraph>{student.time}</Paragraph>
             </div>
             <div>{student.status}</div>
-            <div>
+            <div className={styles.actions}>
               <ButtonEditStudent id={student._id} />
+              <ButtonDeleteStudent id={student._id} />
             </div>
           </div>
         ))}

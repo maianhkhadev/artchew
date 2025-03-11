@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 import { Title } from 'rebear';
 import { FormLogin } from '../../components/FormLogin';
 import styles from './Welcome.module.scss';
@@ -12,7 +12,7 @@ export function Welcome() {
     const { email, password } = values;
     if (email === 'admin@artchew.com' && password === 'admin123') {
       sessionStorage.setItem('token', 'artchew_token');
-      navigate('/students');
+      navigate("/students");
     }
   };
 
