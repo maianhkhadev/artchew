@@ -8,7 +8,9 @@ export function App() {
     <Routes>
       <Route path="" Component={Welcome} />
 
-      <Route path="students" Component={StudentList} />
+      <Route Component={PrivateRoute}>
+        <Route path="students" Component={StudentList} />
+      </Route>
     </Routes>
   );
 }
