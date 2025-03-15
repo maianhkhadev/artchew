@@ -15,7 +15,7 @@ export function StudentStatus(props: StudentStatusProps) {
     }
 
     if (status === 'inactive') {
-      return styles.active;
+      return styles.inactive;
     }
 
     return styles.registered;

@@ -1,17 +1,17 @@
 import { Title } from 'rebear';
 
 type CourseNameProps = {
-  id: string;
+  courseId: string;
 };
 
 export function CourseName(props: CourseNameProps) {
-  const { id } = props;
+  const { courseId } = props;
 
-  if (id === '3') {
+  if (courseId === '3') {
     return <Title level={6}>Lớp học trực tiếp</Title>;
   }
 
-  if (id === '2') {
+  if (courseId === '2') {
     return <Title level={6}>Lớp online google meet</Title>;
   }
 

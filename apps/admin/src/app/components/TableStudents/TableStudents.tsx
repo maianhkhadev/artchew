@@ -12,7 +12,7 @@ export function TableStudents() {
   const [searchParams] = useSearchParams();
   const keyword = searchParams.get('keyword') ?? '';
   const status = searchParams.get('status') ?? 'all';
-  const { isPending, data: students = [] } = useStudents();
+  const { data: students = [] } = useStudents();
 
   const availableStudents = useMemo(() => {
     return students.filter((student) => {
@@ -38,7 +38,7 @@ export function TableStudents() {
 
       return true;
     });
-  }, [isPending, keyword, status]);
+  }, [students, keyword, status]);
 
   return (
     <section className={styles.table}>
@@ -60,7 +60,7 @@ export function TableStudents() {
               <Paragraph>{student.email}</Paragraph>
             </div>
             <div>
-              <CourseName id={student.courseId} />
+              <CourseName courseId={student.courseId} />
               <Paragraph>{student.time}</Paragraph>
             </div>
             <div>

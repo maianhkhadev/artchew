@@ -38,11 +38,13 @@ export function FormStudent(props: FormStudentProps) {
         label="Course"
         rules={{ required: true }}
         element={
-          <Select>
-            <SelectOption value="1" label="Bộ video tự học" />
-            <SelectOption value="2" label="Lớp online google meet" />
-            <SelectOption value="3" label="Lớp học trực tiếp" />
-          </Select>
+          <Select
+            options={[
+              { value: '1', label: 'Bộ video tự học' },
+              { value: '2', label: 'Lớp online google meet' },
+              { value: '3', label: 'Lớp học trực tiếp' },
+            ]}
+          />
         }
       />
 
@@ -58,11 +60,13 @@ export function FormStudent(props: FormStudentProps) {
         label="Status"
         rules={{ required: true }}
         element={
-          <Select>
-            <SelectOption value="registered" label="Registered" />
-            <SelectOption value="active" label="Active" />
-            <SelectOption value="inactive" label="Inactive" />
-          </Select>
+          <Select
+            options={[
+              { value: 'registered', label: 'Registered' },
+              { value: 'active', label: 'Active' },
+              { value: 'inactive', label: 'Inactive' },
+            ]}
+          />
         }
       />
 

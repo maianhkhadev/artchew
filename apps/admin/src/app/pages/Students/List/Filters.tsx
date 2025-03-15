@@ -21,16 +21,17 @@ export function Filters() {
       />
       <Select
         value={status}
+        options={[
+          { value: 'all', label: 'All' },
+          { value: 'registered', label: 'Registered' },
+          { value: 'active', label: 'Active' },
+          { value: 'inactive', label: 'Inactive' },
+        ]}
         onChange={(value) => {
           searchParams.set('status', value.toString());
           navigate(`/students?${searchParams.toString()}`);
         }}
-      >
-        <SelectOption value="all" label="All" />
-        <SelectOption value="registered" label="Registered" />
-        <SelectOption value="active" label="Active" />
-        <SelectOption value="inactive" label="Inactive" />
-      </Select>
+      />
     </div>
   );
 }
