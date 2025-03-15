@@ -8,7 +8,7 @@ import {
   Form,
   FormItem,
   Input,
-  Password,
+  Select,
   Button,
 } from 'rebear';
 import styles from './GetInTouch.module.scss';
@@ -40,46 +40,49 @@ export const GetInTouch = () => {
             <br />
             <br />
             <br />
-            <Form onSubmit={handleSubmit}>
+            <Form defaultValues={{}} onSubmit={handleSubmit}>
               <FormItem
                 name="fullname"
                 label="Họ và tên"
                 rules={{ required: true }}
-              >
-                <Input />
-              </FormItem>
+                element={<Input />}
+              />
 
               <FormItem
                 name="email"
                 label="Mail đăng nhập"
                 rules={{ required: true }}
-              >
-                <Input />
-              </FormItem>
+                element={<Input />}
+              />
 
               <FormItem
                 name="phone"
                 label="Số điện thoại"
                 rules={{ required: true }}
-              >
-                <Input />
-              </FormItem>
+                element={<Input />}
+              />
 
               <FormItem
-                name="service"
+                name="courseId"
                 label="Phương thức học"
                 rules={{ required: true }}
-              >
-                <Password />
-              </FormItem>
+                element={
+                  <Select
+                    options={[
+                      { value: '1', label: 'Bộ video tự học' },
+                      { value: '2', label: 'Lớp online google meet' },
+                      { value: '3', label: 'Lớp học trực tiếp' },
+                    ]}
+                  />
+                }
+              />
 
               <FormItem
                 name="time"
                 label="Suất học đăng ký"
                 rules={{ required: true }}
-              >
-                <Password />
-              </FormItem>
+                element={<Input />}
+              />
 
               <Button variant="secondary" size="2xl">
                 Gửi

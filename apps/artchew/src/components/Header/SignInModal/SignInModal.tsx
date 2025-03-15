@@ -30,22 +30,20 @@ export const SignInModal = (props: SignInModalProps) => {
           <Title level={3}>Đăng nhập tài khoản</Title>
           <br />
           <br />
-          <Form onSubmit={handleSubmit}>
+          <Form defaultValues={{}} onSubmit={handleSubmit}>
             <FormItem
               name="email"
               label="Mail đăng nhập"
               rules={{ required: true }}
-            >
-              <Input />
-            </FormItem>
+              element={<Input />}
+            />
 
             <FormItem
               name="passowrd"
               label="Password"
               rules={{ required: true }}
-            >
-              <Password />
-            </FormItem>
+              element={<Password />}
+            />
 
             <Button variant="secondary" size="2xl">
               Gửi
