@@ -40,6 +40,7 @@ export function ButtonDeleteStudent(props: ButtonDeleteStudentProps) {
       <ConfirmationModal
         open={open}
         onOpenChange={onOpenChange}
+        variant="error"
         onConfirm={handleConfirm}
       >
         <ModalTitle>

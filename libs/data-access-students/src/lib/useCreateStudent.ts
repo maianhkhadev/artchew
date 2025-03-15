@@ -5,8 +5,8 @@ export const useCreateStudent = () => {
   const queryClient = useQueryClient();
 
   return useMutation({
-    mutationFn: () => {
-      return axios.post('/students');
+    mutationFn: (formData: any) => {
+      return axios.post('/students', formData);
     },
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['students'] });

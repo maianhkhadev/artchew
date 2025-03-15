@@ -24,7 +24,6 @@ router.get("/students/:id", async (req: Request, res: Response) => {
 
 router.post("/students", async (req: Request, res: Response) => {
   try {
-    console.log(req.body)
     const newStudent = new Student(req.body);
     const savedStudent = await newStudent.save();
     res.status(201).json(savedStudent);

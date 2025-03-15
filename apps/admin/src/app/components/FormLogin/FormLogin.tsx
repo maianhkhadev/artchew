@@ -1,33 +1,25 @@
-import {
-  Form,
-  FormItem,
-  Input,
-  Password,
-  Button,
-} from 'rebear';
+import { Form, FormItem, Input, Password, Button } from 'rebear';
 
 type FormLoginProps = {
   isLoading: boolean;
   onSubmit: (values: any) => void;
 };
 
+const DEFAULT_VALUES = { email: '', password: '' };
+
 export function FormLogin(props: FormLoginProps) {
   const { onSubmit } = props;
 
   return (
-    <Form onSubmit={onSubmit}>
+    <Form defaultValues={DEFAULT_VALUES} onSubmit={onSubmit}>
       <FormItem
         name="email"
         label="Email"
         rules={{ required: true }}
-        controller={<Input />}
+        element={<Input />}
       />
 
-      <FormItem
-        name="password"
-        label="Password"
-        controller={<Password />}
-      />
+      <FormItem name="password" label="Password" element={<Password />} />
 
       <Button variant="primary" block>
         Submit

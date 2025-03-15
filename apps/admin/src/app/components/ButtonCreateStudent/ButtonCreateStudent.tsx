@@ -14,7 +14,11 @@ export function ButtonCreateStudent() {
   };
 
   const handleSubmit = (values: any) => {
-    mutate(values);
+    mutate(values, {
+      onSuccess: () => {
+        onOpenChange(false);
+      },
+    });
   };
 
   return (

@@ -1,0 +1,20 @@
+.status {
+  color: #ffffff;
+  font-size: var(--rb-text-xs-font-size);
+  line-height: var(--rb-text-xs-line-height);
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.active {
+  background-color: var(--rb-success-600);
+}
+
+.inactive {
+  background-color: var(--rb-gray-600);
+}
+
+.registered {
+  background-color: var(--rb-warning-600);
+}

@@ -2,11 +2,15 @@
   padding: 1rem;
 
   .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     border-bottom: 1px solid #eeeeee;
     padding-bottom: 1rem;
+
+    .actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1rem;
+    }
   }
 
   .main {

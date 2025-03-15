@@ -1,6 +1,7 @@
 import { Title } from 'rebear';
 import { TableStudents } from '../../../components/TableStudents';
 import { ButtonCreateStudent } from '../../../components/ButtonCreateStudent';
+import { Filters } from './Filters';
 import styles from './List.module.scss';
 
 export function StudentList() {
@@ -8,7 +9,12 @@ export function StudentList() {
     <div className={styles.page}>
       <header className={styles.header}>
         <Title level={3}>Students</Title>
-        <ButtonCreateStudent />
+
+        <div className={styles.actions}>
+          <Filters />
+
+          <ButtonCreateStudent />
+        </div>
       </header>
 
       <main className={styles.main}>

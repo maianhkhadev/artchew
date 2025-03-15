@@ -28,6 +28,8 @@
         "libs/data-access-students/src/index.ts"
       ],
       "@artchew/data-access-users": ["libs/data-access-users/src/index.ts"],
+      "@artchew/ui-course-name": ["libs/ui-course-name/src/index.ts"],
+      "@artchew/ui-student-status": ["libs/ui-student-status/src/index.ts"],
       "@artchew/util-axios": ["libs/util-axios/src/index.ts"]
     }
   },
