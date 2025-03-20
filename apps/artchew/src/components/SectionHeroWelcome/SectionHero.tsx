@@ -9,16 +9,16 @@ export const SectionHero = () => {
     <div className={styles.hero} style={{ backgroundImage: `url(${img.src})` }}>
       <Container>
         <Display className={styles.title}>Artchew</Display>
-        <div className={styles.description}>
-          <Title level={3}>Artchew course<br />by Người đá</Title>
-          <Paragraph>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus
-            mus.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa.
-          </Paragraph>
-        </div>
+        <Title level={3} className={styles.subtitle}>
+          Artchew course by Người đá
+        </Title>
+        <Paragraph className={styles.description}>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+          et magnis dis parturient montes, nascetur ridiculus mus.Lorem ipsum
+          dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+          eget dolor. Aenean massa.
+        </Paragraph>
       </Container>
     </div>
   );

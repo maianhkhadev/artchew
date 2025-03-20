@@ -1,8 +1,17 @@
-import { Title, Paragraph } from 'rebear';
-import Image from 'next/image';
+import { Title, Paragraph, Button } from 'rebear';
 import styles from './PricePanel.module.scss';
-import srcCheck from './checked.svg';
-import srcUncheck from './uncheck.svg';
+
+const articleNames = [
+  'Phối cảnh',
+  'Dựng hình',
+  'Ánh sáng',
+  'Line Art',
+  'Anatomy căn bản',
+  'Cách điệu',
+  'Quy trình lên màu',
+  'Lý thuyết màu sắc',
+  'Layout & Composition',
+];
 
 type CourseProps = {
   title: string;
@@ -29,30 +38,32 @@ export const Course = (props: CourseProps) => {
         <Title className={styles.name} level={3}>
           {title}
         </Title>
-        <Paragraph>{numberOfLessions}</Paragraph>
+        <Paragraph>{numberOfLessions} bài giảng</Paragraph>
         <Paragraph>{numberOfStudents}</Paragraph>
         <Paragraph>{time}</Paragraph>
       </div>
 
       <div className={styles.divider} />
 
-      <div className={styles.courseContent}>
-        <div className={styles.cell} />
-
+      <main className={styles.courseContent}>
         {availableLessions.map((availableLession, index) => (
           <div key={index} className={styles.cell}>
-            <Image src={availableLession ? srcCheck : srcUncheck} alt="" />
+            {availableLession ? articleNames[index] : '-'}
           </div>
         ))}
-      </div>
+      </main>
 
       <div className={styles.divider} />
-      
-      <div className={styles.courseFooter}>
+
+      <footer className={styles.courseFooter}>
         <Title level={2}>
           {price} <sup>đ</sup>
         </Title>
-      </div>
+
+        <Button variant="tertiary" size="2xl" block>
+          Đăng Kí
+        </Button>
+      </footer>
     </div>
   );
 };

@@ -12,15 +12,15 @@
       text-transform: uppercase;
 
       @media screen and (min-width: 1200px) {
-        font-size: 216px;
-        line-height: 216px;
+        font-size: 10rem;
+        line-height: 10rem;
         padding-left: 5%;
         padding-right: 5%;
       }
     
       @media screen and (min-width: 600px) and (max-width: 1200px) {
-        font-size: 176px;
-        line-height: 176px;
+        font-size: 7rem;
+        line-height: 7rem;
       }
     
       @media screen and (max-width: 600px) {

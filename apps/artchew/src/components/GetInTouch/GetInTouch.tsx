@@ -4,7 +4,7 @@ import Image from 'next/image';
 import {
   Modal,
   ModalContent,
-  Display,
+  Title,
   Form,
   FormItem,
   Input,
@@ -33,11 +33,10 @@ export const GetInTouch = () => {
         <Image src={src} alt="artchew" />
       </a>
 
-      <Modal className={styles.modal} open={open} onOpenChange={onOpenChange}>
+      <Modal open={open} onOpenChange={onOpenChange}>
         <ModalContent>
           <div className={styles.modalContent}>
-            <Display className={styles.title}>Đăng Kí</Display>
-            <br />
+            <Title level={3}>Đăng Kí</Title>
             <br />
             <br />
             <Form defaultValues={{}} onSubmit={handleSubmit}>

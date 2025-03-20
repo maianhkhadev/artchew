@@ -1,67 +1,28 @@
 .pricePanel {
+  display: grid;
+  padding-top: 3rem;
 
-  .panelContent {
-    display: grid;
+  @media screen and (min-width: 1200px) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding-top: 3rem;
+    grid-gap: 5rem;
   }
 
-  @media screen and (max-width: 600px) {
-    max-width: 100%;
-    overflow: auto;
-
-    .panelContent {
-      width: 1200px;
-    }
-  }
-}
-
-.menu {
-
-  .menuHeader, .menuContent, .menuFooter {
-
-    .name {
-      height: 56px;
-      margin-bottom: 58px;
-    }
-
-    p:not(.menuItem) {
-      font-weight: 600;
-      padding-top: 0.5rem;
-      padding-bottom: 0.5rem;
-    }
-
-    p.menuItem {
-      color: #918585;
-      padding: 0.5rem 0 0.5rem 1rem;
-    }
-  }
-
-  .menuHeader {
-    border-top-left-radius: 2.5rem;
-    border-top-right-radius: 2.5rem;
-    padding: 2rem 2.5rem 1rem;
-  }
-
-  .menuContent {
-    padding: 1rem 2.5rem;
-  }
-
-  .menuFooter {
-    border-bottom-left-radius: 2.5rem;
-    border-bottom-right-radius: 2.5rem;
-    padding: 1rem 2.5rem 2rem;
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
   }
 }
 
 .course {
+  border: 1px solid #918585;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
 
   .courseHeader, .courseContent, .courseFooter {
     text-align: center;
     
     .name {
-      height: 56px;
-      margin-bottom: 58px;
+      margin-bottom: 1rem;
     }
 
     p {
@@ -70,13 +31,8 @@
     }
 
     .cell {
-      min-height: 2.5rem;
       padding-top: 0.5rem;
       padding-bottom: 0.5rem;
-
-      @media screen and (max-width: 600px) {
-        height: 35px;
-      }
 
       img {
         width: auto;
@@ -86,25 +42,31 @@
   }
 
   .courseHeader {
-    border-top-left-radius: 2.5rem;
-    border-top-right-radius: 2.5rem;
-    padding: 2rem 2.5rem 1rem;
+    padding: 1rem;
   }
 
   .courseContent {
-    padding: 1rem 2.5rem;
+    padding: 1rem;
   }
 
   .courseFooter {
-    border-bottom-left-radius: 2.5rem;
-    border-bottom-right-radius: 2.5rem;
-    padding: 1rem 2.5rem 2rem;
+    padding: 1rem;
+
+    button {
+      visibility: hidden;
+      text-transform: uppercase;
+      border-radius: 2rem;;
+      margin-top: 1rem;
+    }
   }
 
   &:hover {
+    
+    .courseFooter {
 
-    .courseHeader, .courseContent, .courseFooter {
-      background-color: #F1F1F1;
+      button {
+        visibility: visible;
+      }
     }
   }
 }

@@ -9,55 +9,22 @@
   }
 }
 
-.modal {
-  width: 900px;
+.modalContent {
+  text-align: center;
 
-  .modalContent {
-    text-align: center;
+  @media screen and (min-width: 600px) {
+    padding: 5rem 3rem 4rem;
+  }
 
-    @media screen and (min-width: 600px) {
-      padding: 5rem 3rem 4rem;
-    }
-  
-    @media screen and (max-width: 600px) {
-      padding: 3rem 1rem 2rem;
-    }
+  @media screen and (max-width: 600px) {
+    padding: 3rem 1rem 2rem;
+  }
 
-    .title {
-      color: #302C2C;
-      font-family: "Protest Strike", serif;
-      text-transform: uppercase;
-
-      @media screen and (min-width: 1200px) {
-        font-size: 216px;
-        line-height: 216px;
-      }
-    
-      @media screen and (min-width: 600px) and (max-width: 1200px) {
-        font-size: 176px;
-        line-height: 176px;
-      }
-    
-      @media screen and (max-width: 600px) {
-        font-size: 4rem;
-        line-height: 4rem;
-      }
-    }
-
-    form {
-
-      @media screen and (min-width: 1200px) {
-        width: 400px;
-        margin: auto;
-      }
-    }
-  
-    button {
-      width: 75%;
-      justify-content: center;
-      text-transform: uppercase;
-      border-radius: 2rem;
-      margin-top: 1rem;
-    }
+  button {
+    width: 75%;
+    justify-content: center;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    margin-top: 1rem;
   }
 }
