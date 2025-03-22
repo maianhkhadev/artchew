@@ -24,7 +24,6 @@ export const SignInModal = (props: SignInModalProps) => {
 
   const handleSubmit = (values: unknown) => {
     const formData = values as never;
-    console.log(formData)
     mutate(formData, {
       onSuccess: (data) => {
         console.log(data);

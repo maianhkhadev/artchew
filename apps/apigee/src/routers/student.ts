@@ -27,8 +27,13 @@ router.post('/student/login', async (req: Request, res: Response) => {
   try {
     const { email, password } = req.body;
     const student = await Student.find({ email, password });
-    const token = jwt.sign(student, 'artchew', { expiresIn: '24h' });
-    res.json(token);
+    
+    if (student) {
+      const token = jwt.sign({ email }, 'artchew', { expiresIn: '24h' });
+      res.json(token);
+    }
+
+    res.status(500).json({ error: 'Wrong credential.' });
   } catch (err) {
     res.status(500).json({ error: 'Wrong credential.' });
   }
