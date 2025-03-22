@@ -4,7 +4,7 @@
 
   @media screen and (min-width: 1200px) {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 5rem;
+    grid-gap: 2rem;
   }
 
   @media screen and (max-width: 1200px) {
@@ -16,7 +16,7 @@
 .course {
   border: 1px solid #918585;
   border-radius: 2rem;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
 
   .courseHeader, .courseContent, .courseFooter {
     text-align: center;
