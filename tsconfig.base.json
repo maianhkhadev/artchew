@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@artchew/artchew-components": ["libs/artchew-components/src/index.ts"],
       "@artchew/data-access-articles": [
         "libs/data-access-articles/src/index.ts"
       ],
@@ -28,6 +29,7 @@
         "libs/data-access-students/src/index.ts"
       ],
       "@artchew/data-access-users": ["libs/data-access-users/src/index.ts"],
+      "@artchew/rebear-auth-lib": ["libs/rebear-auth-lib/src/index.ts"],
       "@artchew/ui-course-name": ["libs/ui-course-name/src/index.ts"],
       "@artchew/ui-student-status": ["libs/ui-student-status/src/index.ts"],
       "@artchew/util-axios": ["libs/util-axios/src/index.ts"]

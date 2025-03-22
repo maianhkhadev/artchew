@@ -1,4 +1,4 @@
 {
   "presets": ["@nx/next/babel"],
-  "plugins": []
+  "plugins": ["@babel/plugin-transform-private-methods"]
 }

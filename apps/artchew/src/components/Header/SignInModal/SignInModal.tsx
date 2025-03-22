@@ -8,6 +8,8 @@ import {
   Password,
   Button,
 } from 'rebear';
+import { useAuthStudent } from '@artchew/data-access-students';
+import { useAuthStore } from '@artchew/rebear-auth-lib';
 import styles from './SignInModal.module.scss';
 
 type SignInModalProps = {
@@ -17,10 +19,18 @@ type SignInModalProps = {
 
 export const SignInModal = (props: SignInModalProps) => {
   const { open, onOpenChange } = props;
+  // const setToken = useAuthStore((state) => state.setToken);
+  const { mutate } = useAuthStudent();
 
   const handleSubmit = (values: unknown) => {
     const formData = values as never;
-    console.log(formData);
+    console.log(formData)
+    mutate(formData, {
+      onSuccess: (data) => {
+        console.log(data);
+        onOpenChange(false);
+      },
+    });
   };
 
   return (
@@ -39,7 +49,7 @@ export const SignInModal = (props: SignInModalProps) => {
             />
 
             <FormItem
-              name="passowrd"
+              name="password"
               label="Password"
               rules={{ required: true }}
               element={<Password />}

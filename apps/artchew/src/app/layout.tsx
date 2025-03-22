@@ -1,8 +1,9 @@
-import './global.scss';
-import './variables.scss';
+import { Providers } from '@artchew/artchew-components';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { GetInTouch } from '../components/GetInTouch';
+import './global.scss';
+import './variables.scss';
 
 export const metadata = {
   title: 'Welcome to artchew',
@@ -24,13 +25,15 @@ export default function RootLayout(props: RootLayoutProps) {
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Protest+Strike&display=swap" />
       </head>
       <body>
-        <Header />
+        <Providers>
+          <Header />
 
-        <main>{children}</main>
+          <main>{children}</main>
 
-        <Footer />
+          <Footer />
 
-        <GetInTouch />
+          <GetInTouch />
+        </Providers>
       </body>
     </html>
   );
