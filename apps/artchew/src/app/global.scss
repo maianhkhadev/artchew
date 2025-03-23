@@ -74,7 +74,10 @@ body {
     border-color: #302c2c;
   }
 
-  .rebear-input-primary:hover, .rebear-input-primary:focus {
+  .rebear-select-primary:hover,
+  .rebear-select-primary:focus,
+  .rebear-input-primary:hover,
+  .rebear-input-primary:focus {
     outline: 1px solid #febd2d;
     border-color: #febd2d;
   }
@@ -120,13 +123,18 @@ body {
   }
 
   .rebear-select {
+    line-height: 40px;
     border-radius: 2rem;
-    padding: 1rem 1.5rem;
+    padding: 0 1.5rem;
   }
 
   .rebear-select-primary {
     color: #5a5656;
     background-color: #f4f4f4;
     border-color: #5a5656;
+  }
+
+  .rebear-select-dropdown {
+    z-index: 9999;
   }
 }

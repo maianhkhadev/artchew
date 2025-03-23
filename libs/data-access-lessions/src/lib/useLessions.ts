@@ -3,7 +3,7 @@ export const useLessions = () => {
     data: [
       {
         id: 1,
-        thumbnailUrl: 'images/thumbnail-videos/thumbnail_01.jpeg',
+        thumbnailUrl: '/images/thumbnail-videos/thumbnail_01.jpeg',
         courses: ['1', '2', '3'],
         title: 'Bài 01',
         description:
@@ -11,7 +11,7 @@ export const useLessions = () => {
       },
       {
         id: 2,
-        thumbnailUrl: 'images/thumbnail-videos/thumbnail_01.jpeg',
+        thumbnailUrl: '/images/thumbnail-videos/thumbnail_01.jpeg',
         courses: [],
         title: 'Bài 02',
         description:

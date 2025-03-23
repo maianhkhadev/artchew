@@ -1,9 +1,9 @@
 .lession {
   background-color: #ffffff;
   border: 1px solid #302C2C;
-  border-radius: 20px;
-  box-shadow: 8px 8px 0 0 #302C2C;
-  padding: 20px;
+  border-radius: 1.25rem;
+  box-shadow: 0.5rem 0.5rem 0 0 #302C2C;
+  padding: 1.25rem;
 
   .thumbnail {
     position: relative;
@@ -12,8 +12,8 @@
     background-repeat: no-repeat;
     aspect-ratio: 3 / 2;
     border: 1px solid #302C2C;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    border-radius: 0.5rem;
+    margin-bottom: 1.25rem;
 
     .buttonStart {
       position: absolute;

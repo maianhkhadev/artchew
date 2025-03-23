@@ -1,16 +1,32 @@
 'use client';
+import { redirect } from 'next/navigation';
+import { Title } from 'rebear';
 import MuxPlayer from '@mux/mux-player-react';
+import { useLession } from '@artchew/data-access-lessions';
 
-export const VideoViewer = () => {
+export const VideoViewer = (id: string) => {
+  const { data: lession } = useLession(id);
+
+  if (!lession) {
+    redirect('/');
+  }
+
   return (
-    <MuxPlayer
-      playbackId="DS00Spx1CV902MCtPj5WknGlR102V5HFkDe"
-      // metadata={{
-      //   video_id: 'video-id-123456',
-      //   video_title: 'Bick Buck Bunny',
-      //   viewer_user_id: 'user-id-bc-789',
-      // }}
-    />
+    <section>
+      <main>
+        <MuxPlayer
+          playbackId="DS00Spx1CV902MCtPj5WknGlR102V5HFkDe"
+          // metadata={{
+          //   video_id: 'video-id-123456',
+          //   video_title: 'Bick Buck Bunny',
+          //   viewer_user_id: 'user-id-bc-789',
+          // }}
+        />
+      </main>
+      <footer>
+        <Title level={3}>{lession.title}</Title>
+      </footer>
+    </section>
   );
 };
 

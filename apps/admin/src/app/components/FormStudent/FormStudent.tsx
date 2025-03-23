@@ -1,4 +1,4 @@
-import { Form, FormItem, Input, Select, SelectOption, Button } from 'rebear';
+import { Form, FormItem, Input, Select, Button } from 'rebear';
 import { Student } from '@artchew/data-access-students';
 
 type FormStudentProps = {
@@ -52,7 +52,19 @@ export function FormStudent(props: FormStudentProps) {
         name="time"
         label="Study shift"
         rules={{ required: true }}
-        element={<Input />}
+        element={
+          <Select
+            options={[
+              { value: '08:00', label: '08:00' },
+              { value: '10:00', label: '10:00' },
+              { value: '13:00', label: '13:00' },
+              { value: '15:00', label: '15:00' },
+              { value: '17:00', label: '17:00' },
+              { value: '19:00', label: '19:00' },
+              { value: '21:00', label: '21:00' },
+            ]}
+          />
+        }
       />
 
       <FormItem

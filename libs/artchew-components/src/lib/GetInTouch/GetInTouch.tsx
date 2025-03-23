@@ -15,6 +15,14 @@ import { useCreateStudent } from '@artchew/data-access-students';
 import styles from './GetInTouch.module.scss';
 import src from './cta.svg';
 
+const defaultValues = {
+  name: '',
+  email: '',
+  phone: '',
+  courseId: '',
+  time: '',
+};
+
 export const GetInTouch = () => {
   const [open, onOpenChange] = useState(false);
   const { isPending, isSuccess, mutate } = useCreateStudent();
@@ -42,9 +50,9 @@ export const GetInTouch = () => {
               <Title level={3}>Đăng Kí</Title>
               <br />
               <br />
-              <Form defaultValues={{}} onSubmit={handleSubmit}>
+              <Form defaultValues={defaultValues} onSubmit={handleSubmit}>
                 <FormItem
-                  name="fullname"
+                  name="name"
                   label="Họ và tên"
                   rules={{ required: true }}
                   element={<Input />}
@@ -83,7 +91,19 @@ export const GetInTouch = () => {
                   name="time"
                   label="Suất học đăng ký"
                   rules={{ required: true }}
-                  element={<Input />}
+                  element={
+                    <Select
+                      options={[
+                        { value: '08:00', label: '08:00' },
+                        { value: '10:00', label: '10:00' },
+                        { value: '13:00', label: '13:00' },
+                        { value: '15:00', label: '15:00' },
+                        { value: '17:00', label: '17:00' },
+                        { value: '19:00', label: '19:00' },
+                        { value: '21:00', label: '21:00' },
+                      ]}
+                    />
+                  }
                 />
 
                 <Button variant="secondary" size="2xl">
@@ -93,9 +113,7 @@ export const GetInTouch = () => {
             </div>
           )}
 
-          {isSuccess && (
-            <div className={styles.modalContent}></div>
-          )}
+          {isSuccess && <div className={styles.modalContent}></div>}
         </ModalContent>
       </Modal>
     </>

@@ -43,9 +43,11 @@ router.post('/student/login', async (req: Request, res: Response) => {
 router.post('/students', async (req: Request, res: Response) => {
   try {
     const newStudent = new Student(req.body);
+    newStudent.status = 'registered'
     const savedStudent = await newStudent.save();
     res.status(201).json(savedStudent);
   } catch (err) {
+    console.log(err)
     res.status(400).json({ error: 'Failed to create student.' });
   }
 });

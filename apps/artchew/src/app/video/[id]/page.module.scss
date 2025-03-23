@@ -1,0 +1,10 @@
+.page {
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+
+  .pageContent {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1rem;
+  }
+}

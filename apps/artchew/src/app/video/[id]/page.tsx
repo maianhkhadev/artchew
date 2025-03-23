@@ -1,11 +1,15 @@
-import { LessionVideos, VideoViewer } from '@artchew/artchew-components';
+import { Container, LessionVideos, VideoViewer } from '@artchew/artchew-components';
 import styles from './page.module.scss';
 
 export default function Video() {
   return (
     <div className={styles.page}>
-      <VideoViewer />
-      <LessionVideos />
+      <Container>
+        <main className={styles.pageContent}>
+          <VideoViewer />
+          <LessionVideos />
+        </main>
+      </Container>
     </div>
   );
 }
