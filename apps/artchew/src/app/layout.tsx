@@ -1,7 +1,7 @@
 import { BaseProviders } from '@artchew/artchew-components';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
-import { GetInTouch } from '../components/GetInTouch';
+import { GetInTouch } from '@artchew/artchew-components';
 import './global.scss';
 import './variables.scss';
 

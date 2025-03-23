@@ -1,6 +1,6 @@
 "use client"
 import { Display } from 'rebear';
-import { Container } from '../Container';
+import { Container } from '@artchew/artchew-components';
 import styles from './SectionDefault.module.scss';
 
 type SectionDefaultProps = {

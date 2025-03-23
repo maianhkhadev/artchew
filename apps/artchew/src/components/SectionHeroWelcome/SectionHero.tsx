@@ -1,6 +1,6 @@
 'use client';
 import { Display, Title, Paragraph } from 'rebear';
-import { Container } from '../Container';
+import { Container } from '@artchew/artchew-components';
 import styles from './SectionHero.module.scss';
 import img from './hero.png';
 

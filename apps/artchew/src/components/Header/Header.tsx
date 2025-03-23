@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { Button, ButtonIcon } from 'rebear';
 import { IconMenu01, IconX } from 'rebear-icons';
-import { Container } from '../Container';
+import { Container } from '@artchew/artchew-components';
 import { SignInModal } from './SignInModal';
 import { SignOutModal } from './SignOutModal';
 import styles from './Header.module.scss';

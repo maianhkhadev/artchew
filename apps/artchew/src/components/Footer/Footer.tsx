@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
 import { Title } from 'rebear';
-import { Container } from '../Container';
+import { Container } from '@artchew/artchew-components';
 import styles from './Footer.module.scss';
 import srcLogo from './logo.svg';
 import srcMail from './mail.svg';

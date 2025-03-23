@@ -1,6 +1,6 @@
 import { SectionHero } from '../../components/SectionHeroArticle';
 import { SectionArticleContent } from '../../components/SectionArticleContent';
-import { PricePanel } from '../../components/PricePanel';
+import { PricePanel } from '@artchew/artchew-components';
 import { SectionLessions } from '../../components/SectionLessions';
 import { useArticle } from '@artchew/data-access-articles';
 

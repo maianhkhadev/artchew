@@ -1,4 +1,4 @@
-import { PricePanel } from '../../components/PricePanel';
+import { PricePanel } from '@artchew/artchew-components';
 import { SectionArticles } from '../../components/SectionArticles';
 import styles from './page.module.scss';
 

@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 'use client';
 import { Title, Paragraph } from 'rebear';
-import { Container } from '../Container';
+import { Container } from '@artchew/artchew-components';
 import styles from './SectionArticleContent.module.scss';
 
 export const SectionArticleContent = () => {
