@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { Modal, ModalContent, Title, Paragraph, Button } from 'rebear';
+import { useAuthUser } from '@artchew/rebear-auth-lib';
 import styles from './Lession.module.scss';
 import src from './button.svg';
 
@@ -13,8 +14,9 @@ type LessionProps = {
 
 export const Lession = (props: LessionProps) => {
   const { thumbnailUrl, title, description } = props;
+  const authUser = useAuthUser();
   const [open, onOpenChange] = useState(false);
-
+  
   const handleStart = (event: React.MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
     onOpenChange(true);

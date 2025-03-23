@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { Button, ButtonIcon } from 'rebear';
 import { IconMenu01, IconX } from 'rebear-icons';
+import { useIsAuth } from '@artchew/rebear-auth-lib';
 import { Container } from '@artchew/artchew-components';
 import { SignInModal } from './SignInModal';
 import { SignOutModal } from './SignOutModal';
@@ -17,7 +18,7 @@ export const Header = () => {
   const router = useRouter();
   const [open, onOpenChange] = useState(false);
   const [openMemu, onOpenMenuChange] = useState(false);
-  const [isAuth, setIsAuth] = useState(false);
+  const isAuth = useIsAuth();
 
   const handleShow = () => {
     onOpenChange(true);

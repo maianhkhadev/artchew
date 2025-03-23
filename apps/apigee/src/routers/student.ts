@@ -26,10 +26,11 @@ router.get('/students/:id', async (req: Request, res: Response) => {
 router.post('/student/login', async (req: Request, res: Response) => {
   try {
     const { email, password } = req.body;
-    const student = await Student.find({ email, password });
+    const student = await Student.findOne({ email, password });
     
     if (student) {
-      const token = jwt.sign({ email }, 'artchew', { expiresIn: '24h' });
+      const { courseId } = student;
+      const token = jwt.sign({ email, courseId }, 'artchew', { expiresIn: '24h' });
       res.json(token);
     }
 
