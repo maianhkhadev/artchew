@@ -12,6 +12,7 @@ import {
   Button,
 } from 'rebear';
 import { useCreateStudent } from '@artchew/data-access-students';
+import { QRcode } from './QRcode';
 import styles from './GetInTouch.module.scss';
 import src from './cta.svg';
 
@@ -113,7 +114,7 @@ export const GetInTouch = () => {
             </div>
           )}
 
-          {isSuccess && <div className={styles.modalContent}></div>}
+          {isSuccess && <QRcode />}
         </ModalContent>
       </Modal>
     </>
