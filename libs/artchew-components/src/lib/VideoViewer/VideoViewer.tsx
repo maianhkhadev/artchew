@@ -4,8 +4,8 @@ import { Title } from 'rebear';
 import MuxPlayer from '@mux/mux-player-react';
 import { useLession } from '@artchew/data-access-lessions';
 
-export const VideoViewer = (id: string) => {
-  const { data: lession } = useLession(id);
+export const VideoViewer = () => {
+  const { data: lession } = useLession("1");
 
   if (!lession) {
     redirect('/');
