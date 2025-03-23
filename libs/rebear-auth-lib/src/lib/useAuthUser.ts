@@ -5,9 +5,11 @@ export const useAuthUser = () => {
   const token = useAuthStore((state) => state.token);
 
   if (token) {
-    const authUser = jwtDecode(token);
-    console.log(authUser);
-    return authUser;
+    const authUser: any = jwtDecode(token);
+    return {
+      email: authUser.email,
+      courseId: authUser.courseId
+    }
   }
 
   return null;

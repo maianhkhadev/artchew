@@ -3,7 +3,7 @@ import { persist } from 'zustand/middleware';
 
 interface AuthState {
   token: string | undefined;
-  setToken: (token: string) => void;
+  setToken: (token: string | undefined) => void;
 }
 
 export const useAuthStore = create<AuthState>()(

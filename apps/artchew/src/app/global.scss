@@ -74,6 +74,11 @@ body {
     border-color: #302c2c;
   }
 
+  .rebear-input-primary:hover, .rebear-input-primary:focus {
+    outline: 1px solid #febd2d;
+    border-color: #febd2d;
+  }
+
   .rebear-modal-backdrop {
     z-index: 9999;
   }

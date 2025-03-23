@@ -22,9 +22,6 @@
       "@artchew/data-access-lessions": [
         "libs/data-access-lessions/src/index.ts"
       ],
-      "@artchew/data-access-lessions/server": [
-        "libs/data-access-lessions/src/server.ts"
-      ],
       "@artchew/data-access-students": [
         "libs/data-access-students/src/index.ts"
       ],

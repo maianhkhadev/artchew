@@ -1,25 +1,35 @@
 'use client';
 import { useState } from 'react';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import { Modal, ModalContent, Title, Paragraph, Button } from 'rebear';
 import { useAuthUser } from '@artchew/rebear-auth-lib';
 import styles from './Lession.module.scss';
 import src from './button.svg';
 
 type LessionProps = {
+  id: number;
   thumbnailUrl: string;
+  courses: string[];
   title: string;
   description: string;
 };
 
 export const Lession = (props: LessionProps) => {
-  const { thumbnailUrl, title, description } = props;
+  const { id, thumbnailUrl, courses, title, description } = props;
+  const router = useRouter();
   const authUser = useAuthUser();
   const [open, onOpenChange] = useState(false);
-  
+
   const handleStart = (event: React.MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
-    onOpenChange(true);
+
+    const userCourseId = authUser?.courseId;
+    if (courses.includes(userCourseId)) {
+      router.push(`/video/${id}`);
+    } else {
+      onOpenChange(true);
+    }
   };
 
   return (
@@ -45,7 +55,9 @@ export const Lession = (props: LessionProps) => {
             <Title level={3}>Thông báo</Title>
             <br />
             <Paragraph>Video này đã bị khóa.</Paragraph>
-            <Paragraph>Bạn cần phải đăng kí khóa học để mở khóa video này.</Paragraph>
+            <Paragraph>
+              Bạn cần phải đăng kí khóa học để mở khóa video này.
+            </Paragraph>
             <br />
             <Paragraph>Bạn có muốn đăng kí khóa học này không?</Paragraph>
             <br />
