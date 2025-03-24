@@ -12,7 +12,7 @@ import {
   Button,
 } from 'rebear';
 import { useCreateStudent } from '@artchew/data-access-students';
-import { QRcode } from './QRcode';
+import { Introduce } from './Introduce';
 import styles from './GetInTouch.module.scss';
 import src from './cta.svg';
 
@@ -30,6 +30,7 @@ export const GetInTouch = () => {
 
   const handleShow = (event: React.MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
+    console.log(11111);
     onOpenChange(true);
   };
 
@@ -44,9 +45,9 @@ export const GetInTouch = () => {
         <Image src={src} alt="artchew" />
       </a>
 
-      <Modal open={open} onOpenChange={onOpenChange}>
+      <Modal className={styles.modal} open={open} onOpenChange={onOpenChange}>
         <ModalContent>
-          {!isSuccess && (
+          {isSuccess && (
             <div className={styles.modalContent}>
               <Title level={3}>Đăng Kí</Title>
               <br />
@@ -114,7 +115,7 @@ export const GetInTouch = () => {
             </div>
           )}
 
-          {isSuccess && <QRcode />}
+          {!isSuccess && <Introduce />}
         </ModalContent>
       </Modal>
     </>
