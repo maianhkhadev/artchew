@@ -28,8 +28,12 @@ body {
     color: #5a5656;
   }
 
-  .rebear-button:focus {
-    outline: unset;
+  .rebear-button:hover, .rebear-button-icon:hover {
+    box-shadow: 0.25rem 0.25rem 0 0 #302C2C;
+  }
+
+  .rebear-button:focus, .rebear-button-icon:focus {
+    outline: unset !important;
   }
 
   .rebear-button:not(.rebear-button-error).rebear-button-primary,
@@ -53,11 +57,6 @@ body {
     border-color: #302c2c;
   }
 
-  .rebear-button:not(.rebear-button-error):focus,
-  .rebear-button-icon:not(.rebear-button-error):focus {
-    outline: 1px solid #febd2d;
-  }
-
   .rebear-button:not(.rebear-button-error).rebear-button-secondary {
     border-color: #302c2c;
   }
@@ -78,8 +77,8 @@ body {
   .rebear-select-primary:focus,
   .rebear-input-primary:hover,
   .rebear-input-primary:focus {
-    outline: 1px solid #febd2d;
-    border-color: #febd2d;
+    outline: unset;
+    border-color: #302c2c;
   }
 
   .rebear-modal-backdrop {
