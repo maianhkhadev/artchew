@@ -56,14 +56,14 @@ export const Lession = (props: LessionProps) => {
             <br />
             <Paragraph>Video này đã bị khóa.</Paragraph>
             <Paragraph>
-              Bạn cần phải đăng kí khóa học để mở khóa video này.
+              Bạn cần phải đăng ký khóa học để mở khóa video này.
             </Paragraph>
             <br />
-            <Paragraph>Bạn có muốn đăng kí khóa học này không?</Paragraph>
+            <Paragraph>Bạn có muốn đăng ký khóa học này không?</Paragraph>
             <br />
             <br />
             <Button variant="secondary" size="2xl">
-              Đăng Kí Khoá Học
+              Đăng Ký Khoá Học
             </Button>
           </div>
         </ModalContent>

@@ -32,6 +32,11 @@ export const Course = (props: CourseProps) => {
     availableLessions,
   } = props;
 
+  const handleClick = () => {
+    const event = new CustomEvent('createStudent');
+    document.dispatchEvent(event);
+  };
+
   return (
     <div className={styles.course}>
       <div className={styles.courseHeader}>
@@ -60,7 +65,7 @@ export const Course = (props: CourseProps) => {
           {price} <sup>đ</sup>
         </Title>
 
-        <Button variant="tertiary" size="2xl" block>
+        <Button variant="tertiary" size="2xl" block onClick={handleClick}>
           Đăng Kí
         </Button>
       </footer>

@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import {
   Modal,
@@ -28,9 +28,20 @@ export const GetInTouch = () => {
   const [open, onOpenChange] = useState(false);
   const { isPending, isSuccess, mutate } = useCreateStudent();
 
+  useEffect(() => {
+    const handleCreateStudent = () => {
+      onOpenChange(true);
+    };
+
+    document.addEventListener('createStudent', handleCreateStudent);
+    
+    return () => {
+      document.removeEventListener('createStudent', handleCreateStudent);
+    };
+  }, []);
+
   const handleShow = (event: React.MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
-    console.log(11111);
     onOpenChange(true);
   };
 
@@ -49,7 +60,7 @@ export const GetInTouch = () => {
         <ModalContent>
           {!isSuccess && (
             <div className={styles.modalContent}>
-              <Title level={3}>Đăng Kí</Title>
+              <Title level={3}>Đăng Ký</Title>
               <br />
               <br />
               <Form defaultValues={defaultValues} onSubmit={handleSubmit}>
@@ -108,7 +119,7 @@ export const GetInTouch = () => {
                   }
                 />
 
-                <Button variant="secondary" size="2xl">
+                <Button variant="secondary" size="2xl" disabled={isPending}>
                   Gửi
                 </Button>
               </Form>
