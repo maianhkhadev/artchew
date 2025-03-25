@@ -47,7 +47,7 @@ export const GetInTouch = () => {
 
       <Modal className={styles.modal} open={open} onOpenChange={onOpenChange}>
         <ModalContent>
-          {isSuccess && (
+          {!isSuccess && (
             <div className={styles.modalContent}>
               <Title level={3}>Đăng Kí</Title>
               <br />
@@ -115,7 +115,7 @@ export const GetInTouch = () => {
             </div>
           )}
 
-          {!isSuccess && <Introduce />}
+          {isSuccess && <Introduce />}
         </ModalContent>
       </Modal>
     </>

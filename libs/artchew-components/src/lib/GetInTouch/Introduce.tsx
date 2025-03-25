@@ -9,9 +9,7 @@ export const Introduce = () => {
     <div className={styles.modalContent}>
       <Title level={3}>Mã QR thanh toán</Title>
       <br />
-      <div>
       <Image src={src} alt="" />
-      </div>
       <br />
       <Title level={3}>Lưu ý thanh toán</Title>
       <Paragraph>
