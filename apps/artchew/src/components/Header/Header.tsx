@@ -69,7 +69,7 @@ export const Header = () => {
               </Link>
               <Link href="/medias">
                 <Button variant="primary" size="2xl">
-                  Video
+                  Thư viện
                 </Button>
               </Link>
               <Link href="/students">
@@ -84,14 +84,24 @@ export const Header = () => {
               </Link>
             </nav>
 
-            <div className={styles.user}>
-              <ButtonIcon
-                variant="primary"
-                icon={<Image src={srcUser} alt="artchew" />}
-                size="xl"
-                onClick={handleShow}
-              />
-            </div>
+            {isAuth && (
+              <div className={styles.user}>
+                <ButtonIcon
+                  variant="primary"
+                  icon={<Image src={srcUser} alt="artchew" />}
+                  size="xl"
+                  onClick={handleShow}
+                />
+              </div>
+            )}
+
+            {!isAuth && (
+              <div className={styles.login}>
+                <Button variant="primary" size="2xl" onClick={handleShow}>
+                  Đăng nhập
+                </Button>
+              </div>
+            )}
           </div>
         </Container>
       </header>
@@ -128,7 +138,7 @@ export const Header = () => {
             data-link="/medias"
             onClick={handleRedirect}
           >
-            Video
+            Thư viện
           </Button>
           <Button
             variant="primary"

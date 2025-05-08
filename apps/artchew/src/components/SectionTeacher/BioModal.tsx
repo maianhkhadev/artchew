@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Image from 'next/image';
 import { Modal, ModalContent, Title, Paragraph } from 'rebear';
 import styles from './BioModal.module.scss';

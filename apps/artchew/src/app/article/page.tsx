@@ -13,8 +13,6 @@ export default function Article() {
 
       <SectionArticleContent />
 
-      <PricePanel />
-
       <SectionLessions title="Bài giảng" />
     </div>
   );

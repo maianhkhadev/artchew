@@ -1,0 +1,13 @@
+.modal {
+  width: 800px;
+  padding-top: 16px;
+
+  .thumbnail {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    aspect-ratio: 1;
+    border: 1px solid #302C2C;
+    border-radius: 0.25rem;
+  }
+}

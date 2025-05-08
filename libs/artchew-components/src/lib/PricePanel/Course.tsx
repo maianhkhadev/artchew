@@ -66,7 +66,7 @@ export const Course = (props: CourseProps) => {
         </Title>
 
         <Button variant="tertiary" size="2xl" block onClick={handleClick}>
-          Đăng Kí
+          Đăng Ký
         </Button>
       </footer>
     </div>
