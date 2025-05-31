@@ -12,11 +12,17 @@ export default function Medias() {
 
       <SectionLessions title="Ánh sáng" />
 
+      <SectionLessions title="Line Art" />
+
       <SectionLessions title="Anatomy cơ bản" />
 
-      <SectionLessions title="Layout & composition" />
+      <SectionLessions title="Cách điệu" />
+
+      <SectionLessions title="QUy trình lên màu" />
 
       <SectionLessions title="Lý thuyết màu sắc" />
+
+      <SectionLessions title="Layout & composition" />
     </div>
   );
 };

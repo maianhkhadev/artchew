@@ -14,3 +14,10 @@
     grid-template-columns: 1fr;
   }
 }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}

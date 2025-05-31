@@ -25,21 +25,42 @@ export const useArticles = () => {
       {
         id: 4,
         avatarUrl: 'images/articles/article-04.png',
-        title: 'Anatomy cơ bản',
+        title: 'Line Art',
         content:
           'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus....',
       },
       {
         id: 5,
-        avatarUrl: 'images/articles/article-05.png',
-        title: 'Layout & Composition',
+        avatarUrl: 'images/articles/article-04.png',
+        title: 'Anatomy cơ bản',
         content:
           'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus....',
       },
       {
         id: 6,
+        avatarUrl: 'images/articles/article-05.png',
+        title: 'Cách điệu',
+        content:
+          'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus....',
+      },
+      {
+        id: 7,
+        avatarUrl: 'images/articles/article-05.png',
+        title: 'Quy trình lên màu',
+        content:
+          'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus....',
+      },
+      {
+        id: 8,
         avatarUrl: 'images/articles/article-06.png',
         title: 'Lý thuyết màu sắc',
+        content:
+          'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus....',
+      },
+      {
+        id: 9,
+        avatarUrl: 'images/articles/article-05.png',
+        title: 'Layout & Composition',
         content:
           'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus....',
       },

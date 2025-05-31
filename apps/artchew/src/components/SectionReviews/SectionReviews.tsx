@@ -6,7 +6,7 @@ import reviews from './reviews.json'
 
 export const SectionReviews = () => {
   return (
-    <SectionDefault title="Review">
+    <SectionDefault title="Human of Artchew">
       <div className={styles.items}>
         {reviews.map((review) => (
           <StudentReview key={review.name} {...review} />

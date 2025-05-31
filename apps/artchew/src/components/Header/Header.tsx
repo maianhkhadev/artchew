@@ -64,7 +64,7 @@ export const Header = () => {
               </Link>
               <Link href="/courses">
                 <Button variant="primary" size="2xl">
-                  Khoá học
+                  Giáo trình
                 </Button>
               </Link>
               <Link href="/medias">
