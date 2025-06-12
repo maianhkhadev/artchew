@@ -1,31 +1,37 @@
 [
   {
-    "avatarUrl": "images/students/student-01.jpeg",
+    "id": 1,
+    "avatarUrl": "/images/students/student-01.jpeg",
     "name": "Review 01",
     "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus...."
   },
   {
-    "avatarUrl": "images/students/student-02.jpeg",
+    "id": 2,
+    "avatarUrl": "/images/students/student-02.jpeg",
     "name": "Review 02",
     "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus...."
   },
   {
-    "avatarUrl": "images/students/student-03.jpeg",
+    "id": 3,
+    "avatarUrl": "/images/students/student-03.jpeg",
     "name": "Review 03",
     "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus...."
   },
   {
-    "avatarUrl": "images/students/student-04.jpeg",
+    "id": 4,
+    "avatarUrl": "/images/students/student-04.jpeg",
     "name": "Review 04",
     "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus...."
   },
   {
-    "avatarUrl": "images/students/student-05.jpeg",
+    "id": 5,
+    "avatarUrl": "/images/students/student-05.jpeg",
     "name": "Review 05",
     "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus...."
   },
   {
-    "avatarUrl": "images/students/student-06.jpeg",
+    "id": 6,
+    "avatarUrl": "/images/students/student-06.jpeg",
     "name": "Review 06",
     "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus...."
   }
