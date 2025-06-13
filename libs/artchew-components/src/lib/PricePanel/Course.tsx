@@ -18,7 +18,7 @@ type CourseProps = {
   numberOfLessions: string;
   numberOfStudents: string;
   time: string;
-  price: number;
+  price: string;
   availableLessions: boolean[];
 };
 
