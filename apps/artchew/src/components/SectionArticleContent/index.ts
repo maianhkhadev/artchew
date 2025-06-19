@@ -1,1 +1,1 @@
-export * from './SectionCoursesHero';
+export * from './SectionArticleContent';
