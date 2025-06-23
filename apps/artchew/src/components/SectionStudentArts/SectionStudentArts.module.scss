@@ -20,4 +20,22 @@
   justify-content: center;
   gap: 1rem;
   margin-top: 3rem;
+
+  @media screen and (min-width: 1200px) {
+    position: relative;
+
+    button {
+      position: absolute;
+      top: -625px;
+      border-radius: 50%;
+    }
+
+    .buttonLeft {
+      left: -100px;
+    }
+
+    .buttonRight {
+      right: -100px;
+    }
+  }
 }

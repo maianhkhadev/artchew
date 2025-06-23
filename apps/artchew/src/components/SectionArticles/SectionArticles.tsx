@@ -7,7 +7,7 @@ export const SectionArticles = () => {
   const { data = [] } = useArticles();
 
   return (
-    <SectionDefault title="Khoá học">
+    <SectionDefault title="Giáo trình">
       <div className={styles.items}>
         {data.map((item) => (
           <Article key={item.id} {...item} />

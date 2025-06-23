@@ -18,7 +18,7 @@ export const SectionStudentDetails = (props: SectionStudentDetailsProps) => {
   }, [id]);
 
   return (
-    <SectionDefault title="Thông tin học viên">
+    <SectionDefault title="Human of Artchew">
       <main className={styles.content}>
         <img src={item?.avatarUrl} alt="" />
 

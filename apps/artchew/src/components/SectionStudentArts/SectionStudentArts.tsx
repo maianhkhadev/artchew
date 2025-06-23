@@ -1,5 +1,6 @@
 'use client';
-import { Button, ButtonSize } from 'rebear';
+import { ButtonIcon, ButtonSize } from 'rebear';
+import { IconChevronLeft, IconChevronRight } from 'rebear-icons';
 import { SectionDefault } from '../SectionDefault';
 import { StudentArt } from '../StudentArt';
 import styles from './SectionStudentArts.module.scss';
@@ -15,11 +16,18 @@ export const SectionStudentArts = () => {
       </div>
 
       <footer className={styles.footer}>
-        <Button variant="primary" size={ButtonSize.LG}>1</Button>
-        <Button variant="secondary" size={ButtonSize.LG}>2</Button>
-        <Button variant="secondary" size={ButtonSize.LG}>3</Button>
-        <Button variant="secondary" size={ButtonSize.LG}>4</Button>
-        <Button variant="secondary" size={ButtonSize.LG}>5</Button>
+        <ButtonIcon
+          className={styles.buttonLeft}
+          variant="primary"
+          size={ButtonSize.XL2}
+          icon={<IconChevronLeft />}
+        />
+        <ButtonIcon
+          className={styles.buttonRight}
+          variant="primary"
+          size={ButtonSize.XL2}
+          icon={<IconChevronRight />}
+        />
       </footer>
     </SectionDefault>
   );
