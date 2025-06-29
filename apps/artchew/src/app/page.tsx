@@ -15,7 +15,7 @@ export default function Index() {
 
       <SectionTeacher />
 
-      <SectionReviews />
+      <SectionReviews title="Review" redirectToDetails={false} />
     </div>
   );
 }

@@ -8,13 +8,29 @@ type StudentReviewProps = {
   avatarUrl: string;
   name: string;
   content: string;
+  redirectToDetails: boolean;
 };
 
 export const StudentReview = (props: StudentReviewProps) => {
-  const { id, avatarUrl, name, content } = props;
+  const { id, avatarUrl, name, content, redirectToDetails } = props;
+
+  if (redirectToDetails) {
+    return (
+      <Link className={styles.studentReview} href={`/student/${id}`}>
+        <div
+          className={styles.avatar}
+          style={{ backgroundImage: `url(${avatarUrl})` }}
+        />
+        <Title className={styles.name} level={3}>
+          {name}
+        </Title>
+        <Paragraph>{content}</Paragraph>
+      </Link>
+    );
+  }
 
   return (
-    <Link className={styles.studentReview} href={`/student/${id}`}>
+    <div className={styles.studentReview}>
       <div
         className={styles.avatar}
         style={{ backgroundImage: `url(${avatarUrl})` }}
@@ -23,7 +39,7 @@ export const StudentReview = (props: StudentReviewProps) => {
         {name}
       </Title>
       <Paragraph>{content}</Paragraph>
-    </Link>
+    </div>
   );
 };
 
