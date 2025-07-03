@@ -1,3 +1,4 @@
+import { useMemo } from 'react';
 import { Title, Paragraph, Button } from 'rebear';
 import styles from './PricePanel.module.scss';
 
@@ -31,6 +32,13 @@ export const Course = (props: CourseProps) => {
     price,
     availableLessions,
   } = props;
+
+  const callToAction = useMemo(() => {
+    if (title === 'Bộ video tự học') {
+      return 'Coming Soon'
+    }
+    return 'Đăng Ký'
+  }, [title])
 
   const handleClick = () => {
     const event = new CustomEvent('createStudent');
@@ -66,7 +74,7 @@ export const Course = (props: CourseProps) => {
         </Title>
 
         <Button variant="tertiary" size="2xl" block onClick={handleClick}>
-          Coming Soon
+          {callToAction}
         </Button>
       </footer>
     </div>
