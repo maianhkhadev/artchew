@@ -35,10 +35,17 @@ export const Course = (props: CourseProps) => {
 
   const callToAction = useMemo(() => {
     if (title === 'Bộ video tự học') {
-      return 'Coming Soon'
+      return 'Coming Soon';
     }
-    return 'Đăng Ký'
-  }, [title])
+    return 'Đăng Ký';
+  }, [title]);
+
+  const callToActionDisabled = useMemo(() => {
+    if (title === 'Bộ video tự học') {
+      return true;
+    }
+    return false;
+  }, [title]);
 
   const handleClick = () => {
     const event = new CustomEvent('createStudent');
@@ -73,7 +80,13 @@ export const Course = (props: CourseProps) => {
           {price} <sup>đ</sup>
         </Title>
 
-        <Button variant="tertiary" size="2xl" block onClick={handleClick}>
+        <Button
+          variant="tertiary"
+          size="2xl"
+          block
+          disabled={callToActionDisabled}
+          onClick={handleClick}
+        >
           {callToAction}
         </Button>
       </footer>
