@@ -4,7 +4,7 @@ import { Title, Paragraph, Button } from 'rebear';
 import styles from './Article.module.scss';
 
 type ArticleProps = {
-  id: string;
+  id: number;
   avatarUrl: string;
   title: string;
   content: string;
