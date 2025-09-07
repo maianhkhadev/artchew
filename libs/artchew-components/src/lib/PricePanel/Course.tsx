@@ -10,7 +10,6 @@ const articleNames = [
   'Anatomy căn bản',
   'Cách điệu',
   'Quy trình lên màu',
-  'Lý thuyết màu sắc',
   'Layout & Composition',
 ];
 

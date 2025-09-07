@@ -3,66 +3,58 @@ export const useArticles = () => {
     data: [
       {
         id: 1,
-        avatarUrl: 'images/articles/article-01.png',
+        avatarUrl: '/images/articles/article-01.png',
         title: 'Phối cảnh',
         content:
-          'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus....',
+          'Mọi thứ chúng ta quan sát từ đời thực, khi mang vào bản vẽ, đều phải qua lưới lọc thị giác đầu tiên là Phối Cảnh. Nó là gì, cấu thành từ đâu, tại sao và khi nào thì phải sử dụng.',
       },
       {
         id: 2,
-        avatarUrl: 'images/articles/article-02.png',
+        avatarUrl: '/images/articles/article-02.png',
         title: 'Dựng hình',
         content:
-          'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus....',
+          'Sử dụng kiến thức không gian từ bài Phối Cảnh để phác thảo vật thể thực tế lên bản vẽ. Đào sâu vào Tỉ Lệ, Kết Cấu Khối.',
       },
       {
         id: 3,
-        avatarUrl: 'images/articles/article-03.png',
+        avatarUrl: '/images/articles/article-03.png',
         title: 'Ánh sáng',
         content:
-          'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus....',
+          'Sử dụng kiến thức Kết Cấu Khối của phần Dựng Hình, để xác định cách tiếp nhận ánh sáng của vật thể. Cách phân bổ ánh sáng cho cả vật thể đơn lẻ & không gian lớn.',
       },
       {
         id: 4,
-        avatarUrl: 'images/articles/article-04.png',
-        title: 'Line Art',
+        avatarUrl: '/images/articles/article-04.png',
+        title: 'Kỹ thuật đi Nét (Line art)',
         content:
-          'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus....',
+          'Kỹ thuật hoàn thiện Line Art từ Dựng Hình. Cách hiểu, lựa chọn, tuỳ chỉnh, và sử dụng các đặc tính của Line Brushes. Các phong cách Line Art khác nhau và mục tiêu sử dụng.',
       },
       {
         id: 5,
-        avatarUrl: 'images/articles/article-04.png',
-        title: 'Anatomy cơ bản',
+        avatarUrl: '/images/articles/article-04.png',
+        title: 'Cơ thể người',
         content:
-          'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus....',
+          'Cách giản lược cơ thể người về các khối căn bản, từ đó kiểm soát Tỉ Lệ, Hướng Xoay, Tạo Dáng.',
       },
       {
         id: 6,
-        avatarUrl: 'images/articles/article-05.png',
+        avatarUrl: '/images/articles/article-05.png',
         title: 'Cách điệu',
         content:
-          'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus....',
+          'Tập trung vào Cách Điệu Nhân Vật. Phương pháp xây dựng ngôn ngữ thiết kế & kiểm soát tạo hình bằng hệ thống Character Sheet.',
       },
       {
         id: 7,
-        avatarUrl: 'images/articles/article-05.png',
+        avatarUrl: '/images/articles/article-05.png',
         title: 'Quy trình lên màu',
-        content:
-          'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus....',
+        content: 'Quy trình lên màu, sử dụng Ánh Sáng để hoàn thiện Màu.<br /><br />Lý thuyết màu sắc',
       },
       {
         id: 8,
-        avatarUrl: 'images/articles/article-06.png',
-        title: 'Lý thuyết màu sắc',
-        content:
-          'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus....',
-      },
-      {
-        id: 9,
-        avatarUrl: 'images/articles/article-05.png',
+        avatarUrl: '/images/articles/article-05.png',
         title: 'Layout & Composition',
         content:
-          'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus....',
+          'Phương pháp sử dụng bố cục, kết hợp & kiểm soát các yếu tố môi trường để tạo nên kịch bản hình ảnh tốt.',
       },
     ],
   };

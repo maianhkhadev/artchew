@@ -1,7 +1,7 @@
 import { SectionDefault } from '../SectionDefault';
 import { StudentReview } from '../StudentReview';
+import { useReviews } from '@artchew/data-access-students';
 import styles from './SectionReviews.module.scss';
-import reviews from './reviews.json';
 
 type SectionReviewsProps = {
   title: string;
@@ -10,6 +10,7 @@ type SectionReviewsProps = {
 
 export const SectionReviews = (props: SectionReviewsProps) => {
   const { title, redirectToDetails } = props;
+  const { data: reviews = [] } = useReviews();
 
   return (
     <SectionDefault title={title}>

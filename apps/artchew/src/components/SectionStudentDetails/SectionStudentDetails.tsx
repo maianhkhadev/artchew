@@ -2,8 +2,8 @@
 import { useMemo } from 'react';
 import { Title, Paragraph } from 'rebear';
 import { SectionDefault } from '../SectionDefault';
+import { useReviews } from '@artchew/data-access-students';
 import styles from './SectionStudentDetails.module.scss';
-import data from './reviews.json';
 
 type SectionStudentDetailsProps = {
   id: string;
@@ -11,10 +11,11 @@ type SectionStudentDetailsProps = {
 
 export const SectionStudentDetails = (props: SectionStudentDetailsProps) => {
   const { id } = props;
+  const { data: reviews = [] } = useReviews();
 
   const item = useMemo(() => {
     const intId = parseInt(id);
-    return data.find((i) => i.id === intId);
+    return reviews.find((i) => i.id === intId);
   }, [id]);
 
   return (

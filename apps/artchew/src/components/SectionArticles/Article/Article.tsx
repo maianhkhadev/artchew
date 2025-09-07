@@ -4,13 +4,14 @@ import { Title, Paragraph, Button } from 'rebear';
 import styles from './Article.module.scss';
 
 type ArticleProps = {
+  id: string;
   avatarUrl: string;
   title: string;
   content: string;
 };
 
 export const Article = (props: ArticleProps) => {
-  const { avatarUrl, title, content } = props;
+  const { id, avatarUrl, title, content } = props;
 
   return (
     <div className={styles.article}>
@@ -22,7 +23,7 @@ export const Article = (props: ArticleProps) => {
         {title}
       </Title>
       <Paragraph className={styles.content}>{content}</Paragraph>
-      <Link href="/article">
+      <Link href={`/article/${id}`}>
         <Button className={styles.viewMore} variant="secondary" size="2xl">
           Xem thêm thông tin
         </Button>

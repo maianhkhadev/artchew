@@ -4,30 +4,27 @@ import { Title, Paragraph } from 'rebear';
 import { Container } from '@artchew/artchew-components';
 import styles from './SectionArticleContent.module.scss';
 
-export const SectionArticleContent = () => {
+type SectionArticleContentProps = {
+  content: string;
+  images: string[];
+}
+
+export const SectionArticleContent = (props: SectionArticleContentProps) => {
+  const { content, images } = props;
+
   return (
     <section className={styles.section}>
       <Container>
         <div className={styles.content}>
           <div className={styles.information}>
             <Title level={3}>NỘI DUNG KHÓA HỌC</Title>
-            <Paragraph>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus
-              mus.Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
-              consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-              Aenean massa. Cum sociis natoque penatibus et magnis dis
-              parturient montes, nascetur ridiculus mus.Lorem ipsum dolor sit
-              amet.
-            </Paragraph>
+            <Paragraph dangerouslySetInnerHTML={{ __html: content }} />
           </div>
 
           <div className={styles.images}>
-            <img src="/images/item-01.jpeg" alt="" />
-            <img src="/images/item-02.jpeg" alt="" />
-            <img src="/images/item-03.jpeg" alt="" />
-            <img src="/images/item-04.jpeg" alt="" />
+            {images.map((src) => (
+              <img key={src} src={src} alt="" />
+            ))}
           </div>
         </div>
       </Container>

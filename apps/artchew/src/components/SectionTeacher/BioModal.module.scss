@@ -1,29 +1,12 @@
 .modal {
   width: 1400px;
-}
 
-.content {
-  display: grid;
-  grid-gap: 1.5rem;
-  align-items: flex-end;
-  padding: 1.25rem 0.25rem 0.25rem;
-
-  @media screen and (min-width: 1200px) {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media screen and (max-width: 1200px) {
-    grid-template-columns: 1fr;
-    padding-top: 5rem;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
-  }
-
-  p {
-    margin-top: 16px;
+  :global(.rebear-modal-content) {
+    padding: 0;
+    
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 }

@@ -11,11 +11,7 @@ export const SectionHero = () => {
         <main className={styles.sectionMain}>
           <Display className={styles.title}>Thông tin khoá học</Display>
           <Paragraph className={styles.description}>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus
-            mus.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa.
+            Phong cách được chọn để giúp học viên tiếp cận kiến thức Nền Tảng Minh Họa ở Artchew sẽ là Flat Pop Art, một phong cách thân thiện và dễ ứng dựng thực tế với người mới bắt đầu. Kỹ năng thực hành Flat Pop Art còn bổ trợ trực tiếp cho các công việc liên quan đến: Thiết Kế Đồ Họa, Xây Dựng Key Visual, Storyboard, Hoạt Hình, Concept Visualization.
           </Paragraph>
         </main>
       </Container>

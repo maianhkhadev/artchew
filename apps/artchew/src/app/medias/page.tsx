@@ -18,9 +18,7 @@ export default function Medias() {
 
       <SectionLessions title="Cách điệu" />
 
-      <SectionLessions title="QUy trình lên màu" />
-
-      <SectionLessions title="Lý thuyết màu sắc" />
+      <SectionLessions title="Quy trình lên màu" />
 
       <SectionLessions title="Layout & composition" />
     </div>

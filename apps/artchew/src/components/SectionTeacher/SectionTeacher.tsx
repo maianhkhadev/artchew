@@ -5,7 +5,7 @@ import { Title, Paragraph, Button } from 'rebear';
 import { SectionDefault } from '../SectionDefault';
 import { BioModal } from './BioModal';
 import styles from './SectionTeacher.module.scss';
-import src from './teacher-01.svg';
+import src from './teacher-01.png';
 
 export const SectionTeacher = () => {
   const [open, onOpenChange] = useState<boolean>(false);
@@ -20,17 +20,9 @@ export const SectionTeacher = () => {
         <Image src={src} alt="" />
 
         <div className={styles.information}>
-          <Title level={3}>NGƯỜI ĐÁ</Title>
+          <Title level={3}>Hoàng Người Đá</Title>
           <Paragraph>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus
-            mus.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            Họa sĩ Minh Họa Người Đá (tên thật Phạm Minh Hoàng), sinh năm 1991, có hơn 10 năm hoạt động Minh Họa & Sáng Tạo trong mảng Truyền Thông & Quảng Cáo, từng hợp tác cùng nhiều nhãn hàng lớn, dẫn dắt nhiều dự án sáng tạo đạt giải thưởng trong nước lẫn quốc tế. 
           </Paragraph>
           <Button variant="tertiary" size="2xl" block onClick={handleShow}>
             Xem thêm
