@@ -1,50 +1,178 @@
 [
   {
     "id": 1,
-    "thumbnailUrl": "images/student-arts/art-01.jpeg",
-    "name": "Tên tác phẩm",
-    "artist": "Nguyễn Văn A",
-    "courseName": "Video bài giảng",
-    "year": "2023"
+    "thumbnailUrl": "images/student-arts/art-01.jpg",
+    "job": "Freelance Artist",
+    "artist": "PHẠM CAO THÁI BẢO",
+    "courseName": "ARTCHEW-14",
+    "year": "2024"
   },
   {
     "id": 12,
-    "thumbnailUrl": "images/student-arts/art-02.jpeg",
-    "name": "Tên tác phẩm",
-    "artist": "Nguyễn Văn A",
-    "courseName": "Video bài giảng",
-    "year": "2023"
+    "thumbnailUrl": "images/student-arts/art-02.jpg",
+    "job": "Graphics Designer",
+    "artist": "NGỌC QUYÊN (MÈO XÙ)",
+    "courseName": "ARTCHEW-08",
+    "year": "2024"
   },
   {
     "id": 3,
-    "thumbnailUrl": "images/student-arts/art-03.png",
-    "name": "Tên tác phẩm",
-    "artist": "Nguyễn Văn A",
-    "courseName": "Video bài giảng",
-    "year": "2023"
+    "thumbnailUrl": "images/student-arts/art-03.jpg",
+    "job": "Graphics Designer",
+    "artist": "CHÂU DƯƠNG",
+    "courseName": "ARTCHEW-08",
+    "year": "2024"
   },
   {
     "id": 4,
     "thumbnailUrl": "images/student-arts/art-04.jpeg",
-    "name": "Tên tác phẩm",
-    "artist": "Nguyễn Văn A",
-    "courseName": "Video bài giảng",
-    "year": "2023"
+    "job": "Producer",
+    "artist": "TRỊNH NGỌC NHƯ HUỲNH",
+    "courseName": "ARTCHEW-07",
+    "year": "2024"
   },
   {
     "id": 5,
-    "thumbnailUrl": "images/student-arts/art-05.jpeg",
-    "name": "Tên tác phẩm",
-    "artist": "Nguyễn Văn A",
-    "courseName": "Video bài giảng",
+    "thumbnailUrl": "images/student-arts/art-05.jpg",
+    "job": "Artist",
+    "artist": "HƯƠNG ĐẶNG",
+    "courseName": "ARTCHEW-01",
     "year": "2023"
   },
   {
     "id": 6,
-    "thumbnailUrl": "images/student-arts/art-06.jpeg",
-    "name": "Tên tác phẩm",
-    "artist": "Nguyễn Văn A",
-    "courseName": "Video bài giảng",
+    "thumbnailUrl": "images/student-arts/art-06.jpg",
+    "job": "Freelance Artist",
+    "artist": "NGUYỄN TIẾN MINH THÔNG",
+    "courseName": "ARTCHEW-11",
+    "year": "2024"
+  },
+  {
+    "id": 7,
+    "thumbnailUrl": "images/student-arts/art-07.jpg",
+    "job": "Artist",
+    "artist": "NGỌC MẪN",
+    "courseName": "ARTCHEW-01",
+    "year": "2023"
+  },
+  {
+    "id": 8,
+    "thumbnailUrl": "images/student-arts/art-08.jpg",
+    "job": "Artist",
+    "artist": "HƯƠNG ĐẶNG",
+    "courseName": "ARTCHEW-01",
+    "year": "2023"
+  },
+  {
+    "id": 9,
+    "thumbnailUrl": "images/student-arts/art-09.jpg",
+    "job": "Event Organizer",
+    "artist": "QUANG HÙNG",
+    "courseName": "ARTCHEW-14",
+    "year": "2024"
+  },
+  {
+    "id": 10,
+    "thumbnailUrl": "images/student-arts/art-10.jpg",
+    "job": "Freelance Artist",
+    "artist": "NGÔ CHẤN ĐỨC",
+    "courseName": "ARTCHEW-04",
+    "year": "2023"
+  },
+  {
+    "id": 11,
+    "thumbnailUrl": "images/student-arts/art-11.jpg",
+    "job": "Graphics Designer",
+    "artist": "LÂM NGUYỆT TRÚC",
+    "courseName": "ARTCHEW-24",
+    "year": "2025"
+  },
+  {
+    "id": 12,
+    "thumbnailUrl": "images/student-arts/art-12.jpg",
+    "job": "Artist",
+    "artist": "HƯƠNG ĐẶNG",
+    "courseName": "ARTCHEW-01",
+    "year": "2023"
+  },
+  {
+    "id": 13,
+    "thumbnailUrl": "images/student-arts/art-13.jpg",
+    "job": "Graphics Designer",
+    "artist": "NGUYỄN PHƯỚC BẢO VY",
+    "courseName": "ARTCHEW-19",
+    "year": "2024"
+  },
+  {
+    "id": 14,
+    "thumbnailUrl": "images/student-arts/art-14.jpg",
+    "job": "Freelance Artist",
+    "artist": "NGUYỄN HOÀNG MINH HIẾU",
+    "courseName": "ARTCHEW-04",
+    "year": "2023"
+  },
+  {
+    "id": 15,
+    "thumbnailUrl": "images/student-arts/art-15.jpg",
+    "job": "Freelance Artist",
+    "artist": "HOÀNG QUỲNH NHƯ",
+    "courseName": "ARTCHEW-09",
+    "year": "2023"
+  },
+  {
+    "id": 16,
+    "thumbnailUrl": "images/student-arts/art-16.jpg",
+    "job": "Graphics Designer",
+    "artist": "UYÊN NGUYỄN",
+    "courseName": "ARTCHEW-01T",
+    "year": "2023"
+  },
+  {
+    "id": 17,
+    "thumbnailUrl": "images/student-arts/art-17.jpg",
+    "job": "Artist",
+    "artist": "KIỀU MINH ÁNH",
+    "courseName": "ARTCHEW-03",
+    "year": "2023"
+  },
+  {
+    "id": 18,
+    "thumbnailUrl": "images/student-arts/art-18.jpg",
+    "job": "Graphics Designer",
+    "artist": "NGUYỄN THANH THỦY TRÚC",
+    "courseName": "ARTCHEW-02",
+    "year": "2023"
+  },
+  {
+    "id": 19,
+    "thumbnailUrl": "images/student-arts/art-19.jpg",
+    "job": "HR",
+    "artist": "NGUYỄN HOÀNG KHÁNH DUY",
+    "courseName": "ARTCHEW-02",
+    "year": "2023"
+  },
+  {
+    "id": 20,
+    "thumbnailUrl": "images/student-arts/art-20.jpg",
+    "job": "Graphics Designer",
+    "artist": "CHÂU DƯƠNG",
+    "courseName": "ARTCHEW-08",
+    "year": "2024"
+  },
+  {
+    "id": 21,
+    "thumbnailUrl": "images/student-arts/art-21.jpg",
+    "job": "Graphics Designer",
+    "artist": "HUỲNH TẤN PHÁT",
+    "courseName": "ARTCHEW-01T",
+    "year": "2023"
+  },
+  {
+    "id": 22,
+    "thumbnailUrl": "images/student-arts/art-22.jpg",
+    "job": "UI/UX Designer",
+    "artist": "CHÂU DƯƠNG",
+    "courseName": "ARTCHEW-02",
     "year": "2023"
   }
 ]

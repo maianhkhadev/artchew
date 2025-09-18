@@ -1,17 +1,28 @@
-.items {
-  display: grid;
-  grid-gap: 32px;
+.sliderWindow {
+  overflow: hidden;
+  width: 100%;
+}
 
-  @media screen and (min-width: 1200px) {
-    grid-template-columns: 1fr 1fr 1fr;
+.sliderTrack {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.sliderItem {
+  flex: 0 0 100%;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .sliderItem {
+    flex: 0 0 50%;
   }
+}
 
-  @media screen and (min-width: 600px) and (max-width: 1200px) {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media screen and (max-width: 600px) {
-    grid-template-columns: 1fr;
+@media (min-width: 1024px) {
+  .sliderItem {
+    flex: 0 0 33.3333%;
   }
 }
 
@@ -26,7 +37,7 @@
 
     button {
       position: absolute;
-      top: -625px;
+      top: -385px;
       border-radius: 50%;
     }
 

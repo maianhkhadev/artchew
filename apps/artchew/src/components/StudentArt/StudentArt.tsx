@@ -6,14 +6,14 @@ import styles from './StudentArt.module.scss';
 
 type StudentArtProps = {
   thumbnailUrl: string;
-  name: string;
+  job: string;
   artist: string;
   courseName: string;
   year: string;
 };
 
 export const StudentArt = (props: StudentArtProps) => {
-  const { thumbnailUrl, name, artist, courseName, year } = props;
+  const { thumbnailUrl, job, artist, courseName, year } = props;
   const [open, onOpenChange] = useState(false);
 
   const handleClick = () => {
@@ -28,9 +28,9 @@ export const StudentArt = (props: StudentArtProps) => {
           style={{ backgroundImage: `url(${thumbnailUrl})` }}
         />
         <Title className={styles.name} level={3}>
-          {name}
+          {artist}
         </Title>
-        <Paragraph>Tác giả: {artist}</Paragraph>
+        <Paragraph>Nghề nghiệp: {job}</Paragraph>
         <Paragraph>Khoá học: {courseName}</Paragraph>
         <Paragraph>Năm học: {year}</Paragraph>
       </div>
