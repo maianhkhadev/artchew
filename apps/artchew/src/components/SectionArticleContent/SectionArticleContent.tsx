@@ -5,19 +5,20 @@ import { Container } from '@artchew/artchew-components';
 import styles from './SectionArticleContent.module.scss';
 
 type SectionArticleContentProps = {
+  title: string;
   content: string;
   images: string[];
 }
 
 export const SectionArticleContent = (props: SectionArticleContentProps) => {
-  const { content, images } = props;
+  const { title, content, images } = props;
 
   return (
     <section className={styles.section}>
       <Container>
         <div className={styles.content}>
           <div className={styles.information}>
-            <Title level={3}>NỘI DUNG KHÓA HỌC</Title>
+            <Title level={3}>{title}</Title>
             <Paragraph dangerouslySetInnerHTML={{ __html: content }} />
           </div>
 

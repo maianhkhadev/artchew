@@ -2,7 +2,7 @@
 import { Display, Paragraph } from 'rebear';
 import { Container } from '@artchew/artchew-components';
 import styles from './SectionHero.module.scss';
-import img from './hero.jpeg';
+import img from './hero.jpg';
 
 export const SectionHero = () => {
   return (
