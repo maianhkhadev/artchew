@@ -13,10 +13,7 @@ export const ModalViewArt = (props: ModalViewArtProps) => {
   return (
     <Modal open={open} onOpenChange={onOpenChange} className={styles.modal}>
       <ModalContent>
-        <div
-          className={styles.thumbnail}
-          style={{ backgroundImage: `url(${thumbnailUrl})` }}
-        />
+        <img className={styles.thumbnail} src={thumbnailUrl} alt="" />
       </ModalContent>
     </Modal>
   );

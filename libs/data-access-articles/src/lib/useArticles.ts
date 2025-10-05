@@ -31,27 +31,27 @@ export const useArticles = () => {
       },
       {
         id: 5,
-        avatarUrl: '/images/articles/article-04.png',
+        avatarUrl: '/images/articles/article-05.png',
         title: 'Cơ thể người',
         content:
           'Cách giản lược cơ thể người về các khối căn bản, từ đó kiểm soát Tỉ Lệ, Hướng Xoay, Tạo Dáng.',
       },
       {
         id: 6,
-        avatarUrl: '/images/articles/article-05.png',
+        avatarUrl: '/images/articles/article-06.png',
         title: 'Cách điệu',
         content:
           'Tập trung vào Cách Điệu Nhân Vật. Phương pháp xây dựng ngôn ngữ thiết kế & kiểm soát tạo hình bằng hệ thống Character Sheet.',
       },
       {
         id: 7,
-        avatarUrl: '/images/articles/article-05.png',
+        avatarUrl: '/images/articles/article-07.png',
         title: 'Quy trình lên màu',
-        content: 'Quy trình lên màu, sử dụng Ánh Sáng để hoàn thiện Màu.<br /><br />Lý thuyết màu sắc',
+        content: 'Quy trình lên màu, sử dụng Ánh Sáng để hoàn thiện Màu. Lý thuyết màu sắc',
       },
       {
         id: 8,
-        avatarUrl: '/images/articles/article-05.png',
+        avatarUrl: '/images/articles/article-08.png',
         title: 'Layout & Composition',
         content:
           'Phương pháp sử dụng bố cục, kết hợp & kiểm soát các yếu tố môi trường để tạo nên kịch bản hình ảnh tốt.',
