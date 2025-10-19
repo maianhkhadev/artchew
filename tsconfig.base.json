@@ -29,7 +29,10 @@
       "@artchew/rebear-auth-lib": ["libs/rebear-auth-lib/src/index.ts"],
       "@artchew/ui-course-name": ["libs/ui-course-name/src/index.ts"],
       "@artchew/ui-student-status": ["libs/ui-student-status/src/index.ts"],
-      "@artchew/util-axios": ["libs/util-axios/src/index.ts"]
+      "@artchew/util-axios": ["libs/util-axios/src/index.ts"],
+      "@artchew/util-progressive-image": [
+        "libs/util-progressive-image/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

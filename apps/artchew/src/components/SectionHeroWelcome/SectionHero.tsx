@@ -1,12 +1,18 @@
 'use client';
 import { Display, Title, Paragraph } from 'rebear';
 import { Container } from '@artchew/artchew-components';
+import { useProgressiveImage } from '@artchew/util-progressive-image';
 import styles from './SectionHero.module.scss';
-import img from './hero.png';
+import src400 from './hero-400.png';
+import src800 from './hero-800.png';
+import src1600 from './hero-1600.png';
+import src2000 from './hero-2000.png';
 
 export const SectionHero = () => {
+  const src = useProgressiveImage([src400.src, src800.src, src1600.src, src2000.src]);
+
   return (
-    <div className={styles.hero} style={{ backgroundImage: `url(${img.src})` }}>
+    <div className={styles.hero} style={{ backgroundImage: `url(${src})` }}>
       <Container>
         <Display className={styles.title}>Artchew</Display>
         <Title level={3} className={styles.subtitle}>

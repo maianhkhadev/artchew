@@ -1,0 +1,9 @@
+{
+  "name": "util-progressive-image",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/util-progressive-image/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project util-progressive-image --web",
+  "targets": {}
+}
