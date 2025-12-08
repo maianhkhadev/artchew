@@ -1,6 +1,8 @@
 'use client';
+import { useState } from 'react';
 import Link from 'next/link';
 import { Title, Paragraph } from 'rebear';
+import { ModalStudentDetails } from './ModalStudentDetails';
 import styles from './StudentReview.module.scss';
 
 type StudentReviewProps = {
@@ -8,15 +10,20 @@ type StudentReviewProps = {
   avatarUrl: string;
   name: string;
   content: string;
-  redirectToDetails: boolean;
+  details: string;
 };
 
 export const StudentReview = (props: StudentReviewProps) => {
-  const { id, avatarUrl, name, content, redirectToDetails } = props;
+  const { avatarUrl, name, content, details } = props;
+  const [open, onOpenChange] = useState(false);
 
-  if (redirectToDetails) {
-    return (
-      <Link className={styles.studentReview} href={`/student/${id}`}>
+  const handleShow = () => {
+    onOpenChange(true);
+  }
+
+  return (
+    <>
+      <div className={styles.studentReview} onClick={handleShow}>
         <div
           className={styles.avatar}
           style={{ backgroundImage: `url(${avatarUrl})` }}
@@ -25,21 +32,14 @@ export const StudentReview = (props: StudentReviewProps) => {
           {name}
         </Title>
         <Paragraph>{content}</Paragraph>
-      </Link>
-    );
-  }
+      </div>
 
-  return (
-    <div className={styles.studentReview}>
-      <div
-        className={styles.avatar}
-        style={{ backgroundImage: `url(${avatarUrl})` }}
+      <ModalStudentDetails
+        open={open}
+        onOpenChange={onOpenChange}
+        content={details}
       />
-      <Title className={styles.name} level={3}>
-        {name}
-      </Title>
-      <Paragraph>{content}</Paragraph>
-    </div>
+    </>
   );
 };
 

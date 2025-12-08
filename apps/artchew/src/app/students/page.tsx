@@ -7,7 +7,7 @@ export default function Students() {
     <div className={styles.page}>
       <SectionStudentArts />
 
-      <SectionReviews title="Human of artchew" redirectToDetails={true} />
+      <SectionReviews title="Human of artchew" />
     </div>
   );
 };
