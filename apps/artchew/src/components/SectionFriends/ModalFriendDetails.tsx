@@ -1,13 +1,13 @@
 import { Modal, ModalContent } from 'rebear';
-import styles from './ModalStudentDetails.module.scss';
+import styles from './ModalFriendDetails.module.scss';
 
-type ModalStudentDetailsProps = {
+type ModalFriendDetailsProps = {
   open: boolean;
   onOpenChange: (open: boolean) => void;
   content: string;
 };
 
-export const ModalStudentDetails = (props: ModalStudentDetailsProps) => {
+export const ModalFriendDetails = (props: ModalFriendDetailsProps) => {
   const { open, onOpenChange, content } = props;
 
   return (
@@ -19,4 +19,4 @@ export const ModalStudentDetails = (props: ModalStudentDetailsProps) => {
   );
 };
 
-export default ModalStudentDetails;
+export default ModalFriendDetails;

@@ -1,5 +1,5 @@
 import { SectionStudentArts } from '../../components/SectionStudentArts';
-import { SectionReviews } from '../../components/SectionReviews';
+import { SectionFriends } from '../../components/SectionFriends';
 import styles from './page.module.scss';
 
 export default function Students() {
@@ -7,7 +7,7 @@ export default function Students() {
     <div className={styles.page}>
       <SectionStudentArts />
 
-      <SectionReviews title="Human of artchew" />
+      <SectionFriends title="Human of artchew" />
     </div>
   );
 };
