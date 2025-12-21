@@ -25,7 +25,7 @@ export const useArticle = (id: string) => {
           '/images/articles/article-02-1.jpg',
           '/images/articles/article-02-2.jpg',
           '/images/articles/article-02-3.jpg',
-          '/images/articles/article-03-4.jpg',
+          '/images/articles/article-02-4.jpg',
         ],
       },
     };

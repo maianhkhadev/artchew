@@ -12,7 +12,7 @@ type FriendProps = {
 };
 
 export const Friend = (props: FriendProps) => {
-  const { avatarUrl, name, details } = props;
+  const { avatarUrl, details } = props;
   const [open, onOpenChange] = useState(false);
 
   const handleShow = () => {
@@ -26,9 +26,6 @@ export const Friend = (props: FriendProps) => {
           className={styles.avatar}
           style={{ backgroundImage: `url(${avatarUrl})` }}
         />
-        <Title className={styles.name} level={3}>
-          {name}
-        </Title>
       </div>
 
       <ModalFriendDetails

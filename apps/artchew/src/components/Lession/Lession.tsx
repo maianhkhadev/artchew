@@ -16,7 +16,7 @@ type LessionProps = {
 };
 
 export const Lession = (props: LessionProps) => {
-  const { id, thumbnailUrl, courses, title, description } = props;
+  const { id, thumbnailUrl, courses, title } = props;
   const router = useRouter();
   const authUser = useAuthUser();
   const [open, onOpenChange] = useState(false);
@@ -46,7 +46,6 @@ export const Lession = (props: LessionProps) => {
         <Title className={styles.title} level={3}>
           {title}
         </Title>
-        <Paragraph>{description}</Paragraph>
       </div>
 
       <Modal open={open} onOpenChange={onOpenChange}>
