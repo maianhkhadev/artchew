@@ -107,13 +107,11 @@ export const GetInTouch = () => {
                   element={
                     <Select
                       options={[
-                        { value: '08:00', label: '08:00' },
-                        { value: '10:00', label: '10:00' },
-                        { value: '13:00', label: '13:00' },
-                        { value: '15:00', label: '15:00' },
-                        { value: '17:00', label: '17:00' },
-                        { value: '19:00', label: '19:00' },
-                        { value: '21:00', label: '21:00' },
+                        { value: '1', label: 'Tối Thứ 2-5, 19h30-21h30' },
+                        { value: '2', label: 'Tối Thứ 3-6, 19h30-21h30' },
+                        { value: '3', label: 'Tối Thứ 4, 19h30-21h30. Sáng thứ 7, 10h-12h' },
+                        { value: '4', label: 'Sáng Thứ 2-5, 10h-12h' },
+                        { value: '5', label: 'Sáng Thứ 3-6, 10h-12h' },
                       ]}
                     />
                   }
