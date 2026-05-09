@@ -18,9 +18,11 @@
   border-radius: 2rem;
   padding: 1rem 2rem;
 
-  .courseHeader, .courseContent, .courseFooter {
+  .courseHeader,
+  .courseContent,
+  .courseFooter {
     text-align: center;
-    
+
     .name {
       margin-bottom: 1rem;
     }
@@ -55,15 +57,23 @@
     button {
       visibility: hidden;
       text-transform: uppercase;
-      border-radius: 2rem;;
+      border-radius: 2rem;
       margin-top: 1rem;
     }
   }
 
-  &:hover {
-    
-    .courseFooter {
+  @media screen and (min-width: 1200px) {
+    &:hover {
+      .courseFooter {
+        button {
+          visibility: visible;
+        }
+      }
+    }
+  }
 
+  @media screen and (max-width: 1200px) {
+    .courseFooter {
       button {
         visibility: visible;
       }
