@@ -29,7 +29,7 @@ npx nx build artchew
 ```sh
 docker-compose down --rmi all --volumes --remove-orphans
 docker system prune -a -f
-docker compose up -d --build
+docker-compose up --build -d
 ```
 
 ## 6. Restart nginx
