@@ -3,7 +3,7 @@
 ## 1. Pull code moi
 
 ```sh
-git pull
+git pull origin develop
 ```
 
 ## 2. Cai dependencies
@@ -27,6 +27,8 @@ npx nx build artchew
 ## 5. Chay Docker
 
 ```sh
+docker-compose down --rmi all --volumes --remove-orphans
+docker system prune -a -f
 docker compose up -d --build
 ```
 
