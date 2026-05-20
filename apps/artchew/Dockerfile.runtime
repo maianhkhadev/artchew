@@ -1,11 +1,19 @@
+FROM node:24-bookworm-slim
+
 WORKDIR /app
 
+ENV NODE_ENV=production
+ENV HOSTNAME=0.0.0.0
+ENV PORT=4200
+ENV API_INTERNAL_URL=http://api:3000
+
 COPY package*.json ./
-RUN npm install
+RUN npm ci
 
 COPY apps/artchew ./apps/artchew
 
 WORKDIR /app/apps/artchew
 
 EXPOSE 4200
-CMD ["npx", "next", "start", "-p", "4200"]
+
+CMD ["npx", "next", "start", "-p", "4200", "-H", "0.0.0.0"]
