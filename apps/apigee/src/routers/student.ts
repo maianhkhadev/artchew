@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.get('/students', async (req: Request, res: Response) => {
   try {
-    const students = await Student.find();
+    const students = Student.findAll();
     res.json(students);
   } catch (err) {
     res.status(500).json({ error: 'Failed to fetch students.' });
@@ -16,7 +16,12 @@ router.get('/students', async (req: Request, res: Response) => {
 router.get('/students/:id', async (req: Request, res: Response) => {
   try {
     const { id } = req.params;
-    const student = await Student.findById(id);
+    const student = Student.findById(id);
+
+    if (!student) {
+      return res.status(404).json({ error: 'Student not found.' });
+    }
+
     res.json(student);
   } catch (err) {
     res.status(500).json({ error: 'Failed to fetch student.' });
@@ -26,15 +31,15 @@ router.get('/students/:id', async (req: Request, res: Response) => {
 router.post('/student/login', async (req: Request, res: Response) => {
   try {
     const { email, password } = req.body;
-    const student = await Student.findOne({ email, password });
-    
+    const student = Student.findByCredentials(email, password);
+
     if (student) {
       const { courseId } = student;
       const token = jwt.sign({ email, courseId }, 'artchew', { expiresIn: '24h' });
-      res.json(token);
+      return res.json(token);
     }
 
-    res.status(500).json({ error: 'Wrong credential.' });
+    return res.status(401).json({ error: 'Wrong credential.' });
   } catch (err) {
     res.status(500).json({ error: 'Wrong credential.' });
   }
@@ -42,12 +47,10 @@ router.post('/student/login', async (req: Request, res: Response) => {
 
 router.post('/students', async (req: Request, res: Response) => {
   try {
-    const newStudent = new Student(req.body);
-    newStudent.status = 'registered'
-    const savedStudent = await newStudent.save();
+    const savedStudent = Student.create(req.body);
     res.status(201).json(savedStudent);
   } catch (err) {
-    console.log(err)
+    console.log(err);
     res.status(400).json({ error: 'Failed to create student.' });
   }
 });
@@ -55,12 +58,12 @@ router.post('/students', async (req: Request, res: Response) => {
 router.put('/students/:id', async (req: Request, res: Response) => {
   try {
     const { id } = req.params;
-    const updatedStudent = await Student.findByIdAndUpdate(id, req.body, {
-      new: true,
-    });
+    const updatedStudent = Student.update(id, req.body);
+
     if (!updatedStudent) {
       return res.status(404).json({ error: 'Student not found.' });
     }
+
     res.json(updatedStudent);
   } catch (err) {
     res.status(400).json({ error: 'Failed to update student.' });
@@ -70,10 +73,12 @@ router.put('/students/:id', async (req: Request, res: Response) => {
 router.delete('/students/:id', async (req: Request, res: Response) => {
   try {
     const { id } = req.params;
-    const deletedStudent = await Student.findByIdAndDelete(id);
+    const deletedStudent = Student.delete(id);
+
     if (!deletedStudent) {
       return res.status(404).json({ error: 'Student not found.' });
     }
+
     res.json(deletedStudent);
   } catch (err) {
     res.status(500).json({ error: 'Failed to delete student.' });

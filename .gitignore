@@ -28,11 +28,16 @@ node_modules
 /.sass-cache
 /connect.lock
 /coverage
+/data
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
 /libpeerconnection.log
 npm-debug.log
 yarn-error.log
 testem.log
 /typings
+*.tsbuildinfo
 
 # System Files
 .DS_Store

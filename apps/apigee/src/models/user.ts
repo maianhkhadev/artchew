@@ -1,15 +1,18 @@
-import mongoose, { Schema, Document } from "mongoose";
+import { getDb } from '../db';
 
-export interface IUser extends Document {
-  name: string;
-  url: string;
-  size: number;
-}
+export type UserRecord = {
+  _id: string;
+  username: string;
+  password: string;
+  name?: string;
+};
 
-const UserSchema: Schema = new Schema({
-  name: { type: String, required: true },
-});
-
-const User = mongoose.model<IUser>("User", UserSchema);
+export const User = {
+  findByCredentials(username: string, password: string) {
+    return getDb()
+      .prepare('SELECT * FROM users WHERE username = ? AND password = ?')
+      .get(username, password) as UserRecord | undefined;
+  },
+};
 
 export default User;
